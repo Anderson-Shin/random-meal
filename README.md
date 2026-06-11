@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.3.0 - SEO Pages complete**
+**v0.3.5 - Deployment preparation**
 
 The working static MVP includes filters, decision tools, multilingual core UI, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -42,3 +42,19 @@ The project currently includes district SEO pages for:
 - Kwun Tong
 
 The sitemap and robots files currently use `https://example.com` as a placeholder. Replace it with the production domain after connecting a custom domain.
+
+## Deployment
+
+This project is designed for Cloudflare Pages as a static site.
+
+- Framework preset: None
+- Build command: empty
+- Build output directory: `/`
+- Environment variables: none required for MVP
+
+See:
+
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [QA Checklist](docs/QA_CHECKLIST.md)
+- [Launch Checklist](docs/LAUNCH_CHECKLIST.md)
+- [Domain Setup Guide](docs/DOMAIN_SETUP.md)

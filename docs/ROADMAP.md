@@ -34,6 +34,16 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Add Open Graph metadata
 - [x] Add internal links
 
+## v0.3.5 Deployment Preparation
+
+- [x] Create DEPLOYMENT.md
+- [x] Create QA_CHECKLIST.md
+- [x] Create LAUNCH_CHECKLIST.md
+- [x] Create DOMAIN_SETUP.md
+- [x] Document Cloudflare Pages settings
+- [x] Document placeholder domain replacement process
+- [x] Document launch QA process
+
 ## v0.4.0 Data Quality
 
 - [ ] Verify restaurant names
@@ -90,7 +100,8 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Replace sitemap placeholder domain after domain setup.
-2. Manually verify restaurant information.
-3. Test district pages on mobile.
-4. Prepare Cloudflare Pages deployment.
+1. Deploy to Cloudflare Pages.
+2. Run QA checklist on deployed URL.
+3. Choose and connect production domain.
+4. Replace `https://example.com` after domain setup.
+5. Start v0.4.0 restaurant data verification.
