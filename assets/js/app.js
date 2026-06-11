@@ -124,7 +124,7 @@
   async function init() {
     cacheElements();
     populateFilters();
-    state.restaurants = await window.RestaurantData.loadRestaurants();
+    state.restaurants = (await window.RestaurantData.loadRestaurants()).filter((restaurant) => restaurant.publicDisplay !== false);
     state.filtered = state.restaurants.slice();
 
     elements.form.addEventListener("change", applyFilters);

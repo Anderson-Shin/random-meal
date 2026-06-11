@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.3.5 - Deployed to Cloudflare Pages**
+**v0.4.0 - Data verification system added**
 
 The working static MVP includes filters, decision tools, multilingual core UI, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -29,7 +29,7 @@ The project stays static-first, beginner-editable, SEO-friendly, low-cost, and m
 
 ## Future MVP Direction
 
-The next milestone is preparing Cloudflare Pages deployment and completing launch QA while keeping manual data-verification work visible in the roadmap.
+The next milestone is manually verifying restaurants district by district and correcting or replacing uncertain entries.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full version plan.
 
@@ -58,3 +58,11 @@ See:
 - [QA Checklist](docs/QA_CHECKLIST.md)
 - [Launch Checklist](docs/LAUNCH_CHECKLIST.md)
 - [Domain Setup Guide](docs/DOMAIN_SETUP.md)
+
+## Data Verification
+
+Restaurant data is manually curated and now includes verification fields. Entries remain first-pass until manually verified.
+
+See:
+
+- [Data Verification Guide](docs/DATA_VERIFICATION.md)

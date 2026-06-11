@@ -1,12 +1,12 @@
 # Restaurant Data Schema
 
-The future restaurant dataset will live at:
+The restaurant dataset lives at:
 
 ```text
 assets/data/restaurants.json
 ```
 
-The file will contain a JSON array of restaurant objects. Do not create the dataset until the relevant roadmap task begins.
+The file contains a JSON array of restaurant objects.
 
 ## Example Object
 
@@ -28,7 +28,13 @@ The file will contain a JSON array of restaurant objects. Do not create the data
   "recommendedFor_en": "Quick solo lunch or casual team lunch.",
   "recommendedFor_zhHant": "Traditional Chinese recommendation.",
   "recommendedFor_zhHans": "Simplified Chinese recommendation.",
-  "sourceNote": "Manually curated. No reviews, ratings, photos, or menu text copied."
+  "sourceNote": "Manually curated. No reviews, ratings, photos, or menu text copied.",
+  "verificationStatus": "unverified",
+  "verified": false,
+  "lastChecked": null,
+  "needsReview": true,
+  "publicDisplay": true,
+  "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
 }
 ```
 
@@ -54,6 +60,43 @@ The file will contain a JSON array of restaurant objects. Do not create the data
 | `recommendedFor_zhHans` | string | Original Simplified Chinese recommendation summary. |
 | `sourceNote` | string | Internal provenance note confirming how the entry was curated. |
 
+## Verification Fields
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `verificationStatus` | string | Manual review state. Allowed values: `unverified`, `verified`, `needs_update`, or `remove_candidate`. |
+| `verified` | boolean | `true` only after a manual check accepts the entry for public launch. |
+| `lastChecked` | string or null | Date of the latest manual check in `YYYY-MM-DD` format, or `null` when not checked. |
+| `needsReview` | boolean | Whether the entry still requires manual attention. |
+| `publicDisplay` | boolean | Whether the entry may appear in public recommendations. Entries with `false` are hidden by the homepage app. |
+| `reviewNotes` | string | Short note explaining the verification result or remaining work. |
+
+New first-pass entries should use:
+
+```json
+{
+  "verificationStatus": "unverified",
+  "verified": false,
+  "lastChecked": null,
+  "needsReview": true,
+  "publicDisplay": true,
+  "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
+}
+```
+
+After a successful manual check, use:
+
+```json
+{
+  "verificationStatus": "verified",
+  "verified": true,
+  "lastChecked": "2026-06-11",
+  "needsReview": false,
+  "publicDisplay": true,
+  "reviewNotes": "Verified restaurant name, district, cuisine, and general suitability."
+}
+```
+
 ## Data Rules
 
 - Do not scrape restaurant websites, platforms, or directories.
@@ -68,3 +111,4 @@ The file will contain a JSON array of restaurant objects. Do not create the data
 - Review entries for accuracy before release and periodically after release.
 - Remove or update closed, renamed, or materially changed restaurants.
 - Store valid UTF-8 JSON with no comments or trailing commas.
+- Keep verification metadata accurate whenever restaurant data changes.

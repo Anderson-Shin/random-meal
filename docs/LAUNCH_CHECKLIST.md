@@ -8,6 +8,10 @@
 - [ ] Confirm no real AdSense code is inserted yet
 - [ ] Confirm no third-party copyrighted content is copied
 - [ ] Confirm restaurant data is first-pass curated only
+- [ ] Verify all restaurant entries
+- [ ] Confirm no entry has `verificationStatus = remove_candidate`
+- [ ] Resolve or replace `needs_update` entries
+- [ ] Confirm all `publicDisplay` entries are suitable for public launch
 
 ## Cloudflare Pages
 

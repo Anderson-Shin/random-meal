@@ -104,3 +104,11 @@ Run this checklist locally and again on the deployed Cloudflare Pages URL.
 - [ ] No menu text
 - [ ] No photos
 - [ ] Restaurant operation status still requires manual verification
+- [ ] Each restaurant has `verificationStatus`
+- [ ] Each restaurant has `verified`
+- [ ] Each restaurant has `lastChecked`
+- [ ] Each restaurant has `needsReview`
+- [ ] Each restaurant has `publicDisplay`
+- [ ] Each restaurant has `reviewNotes`
+- [ ] No restaurant is marked `remove_candidate` before launch
+- [ ] Any `needs_update` entries are reviewed before launch

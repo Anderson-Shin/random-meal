@@ -46,7 +46,12 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## v0.4.0 Data Quality
 
+- [x] Add verification fields to restaurant data
+- [x] Create DATA_VERIFICATION.md
+- [x] Update DATA_SCHEMA.md with verification fields
 - [ ] Verify restaurant names
+- [ ] Verify current operation status
+- [ ] Verify district accuracy
 - [ ] Improve descriptions
 - [ ] Add more tags
 - [ ] Add more districts
@@ -84,6 +89,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - Preferences and results do not sync across devices.
 - Multilingual content quality depends on manual writing and review.
 - `sitemap.xml`, `robots.txt`, canonical URLs, and Open Graph URLs currently use `https://what-should-i-eat-hk.pages.dev` and must be updated after a custom domain is connected.
+- Restaurant entries now include verification metadata, but all entries remain unverified until manually checked.
 
 ## Release Checklist
 
@@ -100,7 +106,8 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Run QA checklist on the deployed URL.
-2. Choose and connect a custom domain.
-3. Replace `https://what-should-i-eat-hk.pages.dev` after custom domain setup.
-4. Start v0.4.0 restaurant data verification.
+1. Manually verify Quarry Bay restaurants.
+2. Manually verify Central restaurants.
+3. Manually verify Kwun Tong restaurants.
+4. Replace or update any uncertain entries.
+5. Then prepare legal pages for AdSense readiness.

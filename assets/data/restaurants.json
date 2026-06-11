@@ -6,17 +6,34 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Japanese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["japanese", "robata", "business meal"],
+    "tags": [
+      "japanese",
+      "robata",
+      "business meal"
+    ],
     "description_en": "A Japanese option in Quarry Bay that fits a slower lunch or dinner when users want something more polished than a quick takeaway.",
     "description_zhHant": "位於鰂魚涌的日式餐廳，適合較悠閒的午餐或晚餐，感覺比一般快餐更正式。",
     "description_zhHans": "位于鲗鱼涌的日式餐厅，适合较悠闲的午餐或晚餐，感觉比一般快餐更正式。",
     "recommendedFor_en": "Good for a business lunch, date meal, or relaxed dinner.",
     "recommendedFor_zhHant": "適合商務午餐、約會用餐或悠閒晚餐。",
     "recommendedFor_zhHans": "适合商务午餐、约会用餐或悠闲晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-cafe-002",
@@ -25,17 +42,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "normal",
-    "tags": ["cafe", "coffee", "light meal"],
+    "tags": [
+      "cafe",
+      "coffee",
+      "light meal"
+    ],
     "description_en": "A cafe-style pick for users who want coffee, a lighter bite, or a casual place to sit around Quarry Bay.",
     "description_zhHant": "鰂魚涌一帶的咖啡店選擇，適合想喝咖啡、吃輕食或簡單坐一會的用戶。",
     "description_zhHans": "鲗鱼涌一带的咖啡店选择，适合想喝咖啡、吃轻食或简单坐一会的用户。",
     "recommendedFor_en": "Good for solo breaks, casual catch-ups, or light lunch.",
     "recommendedFor_zhHant": "適合一個人休息、朋友小聚或輕便午餐。",
     "recommendedFor_zhHans": "适合一个人休息、朋友小聚或轻便午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-chinese-003",
@@ -44,17 +77,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Chinese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["taiwanese", "chinese", "casual meal"],
+    "tags": [
+      "taiwanese",
+      "chinese",
+      "casual meal"
+    ],
     "description_en": "A casual Chinese/Taiwanese-style option for users who want a comfortable meal with colleagues or friends.",
     "description_zhHant": "較輕鬆的中式／台式用餐選擇，適合同事或朋友一起用餐。",
     "description_zhHans": "较轻松的中式／台式用餐选择，适合同事或朋友一起用餐。",
     "recommendedFor_en": "Good for casual lunch with friends or an easy team meal.",
     "recommendedFor_zhHant": "適合朋友午餐或簡單團隊用餐。",
     "recommendedFor_zhHans": "适合朋友午餐或简单团队用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-indian-004",
@@ -63,17 +112,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Indian",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["indian", "vegetarian friendly", "comfort food"],
+    "tags": [
+      "indian",
+      "vegetarian friendly",
+      "comfort food"
+    ],
     "description_en": "An Indian restaurant option for users who want something filling, spiced, and suitable for sharing.",
     "description_zhHant": "印度菜選擇，適合想吃較飽肚、有香料風味並可分享的用戶。",
     "description_zhHans": "印度菜选择，适合想吃较饱肚、有香料风味并可分享的用户。",
     "recommendedFor_en": "Good for group lunches, vegetarian-friendly meals, or dinner with friends.",
     "recommendedFor_zhHant": "適合團隊午餐、素食友善用餐或朋友晚餐。",
     "recommendedFor_zhHans": "适合团队午餐、素食友善用餐或朋友晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-cafe-005",
@@ -82,17 +147,32 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["coffee", "light lunch", "solo friendly"],
+    "tags": [
+      "coffee",
+      "light lunch",
+      "solo friendly"
+    ],
     "description_en": "A clean cafe option for coffee, a quick bite, or a focused solo lunch break.",
     "description_zhHant": "簡潔的咖啡店選擇，適合咖啡、快速輕食或一個人的午餐休息。",
     "description_zhHans": "简洁的咖啡店选择，适合咖啡、快速轻食或一个人的午餐休息。",
     "recommendedFor_en": "Good for solo lunch, coffee breaks, or light office-day meals.",
     "recommendedFor_zhHant": "適合一人午餐、咖啡休息或工作日輕食。",
     "recommendedFor_zhHans": "适合一人午餐、咖啡休息或工作日轻食。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-western-006",
@@ -101,17 +181,34 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Western",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["date", "friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "date",
+      "friends",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["western", "italian", "special occasion"],
+    "tags": [
+      "western",
+      "italian",
+      "special occasion"
+    ],
     "description_en": "A more polished dining choice around Quarry Bay for users looking for a proper sit-down meal.",
     "description_zhHant": "鰂魚涌一帶較正式的用餐選擇，適合想坐下來慢慢吃的一餐。",
     "description_zhHans": "鲗鱼涌一带较正式的用餐选择，适合想坐下来慢慢吃的一餐。",
     "recommendedFor_en": "Good for dates, client lunches, or relaxed dinners.",
     "recommendedFor_zhHant": "適合約會、客戶午餐或悠閒晚餐。",
     "recommendedFor_zhHans": "适合约会、客户午餐或悠闲晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-fastfood-007",
@@ -120,17 +217,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Japanese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["sushi", "quick lunch", "casual"],
+    "tags": [
+      "sushi",
+      "quick lunch",
+      "casual"
+    ],
     "description_en": "A familiar sushi chain option for users who want a straightforward and quick Japanese meal.",
     "description_zhHant": "熟悉的壽司連鎖選擇，適合想快速吃日式餐點的用戶。",
     "description_zhHans": "熟悉的寿司连锁选择，适合想快速吃日式餐点的用户。",
     "recommendedFor_en": "Good for solo lunch, quick dinner, or casual meals with friends.",
     "recommendedFor_zhHant": "適合一人午餐、快速晚餐或朋友輕鬆用餐。",
     "recommendedFor_zhHans": "适合一人午餐、快速晚餐或朋友轻松用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-cafe-008",
@@ -139,17 +252,32 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["coffee", "chain", "quick break"],
+    "tags": [
+      "coffee",
+      "chain",
+      "quick break"
+    ],
     "description_en": "A predictable coffee-chain option for users who need a quick drink, snack, or simple solo stop.",
     "description_zhHant": "穩定的咖啡連鎖選擇，適合快速買飲品、小食或一個人短暫停留。",
     "description_zhHans": "稳定的咖啡连锁选择，适合快速买饮品、小食或一个人短暂停留。",
     "recommendedFor_en": "Good for quick coffee, solo breaks, or light snacks.",
     "recommendedFor_zhHant": "適合快速咖啡、一人休息或輕食。",
     "recommendedFor_zhHans": "适合快速咖啡、一人休息或轻食。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-chinese-009",
@@ -158,17 +286,34 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Chinese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch", "family"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch",
+      "family"
+    ],
     "speed": "normal",
-    "tags": ["shanghainese", "chinese", "group friendly"],
+    "tags": [
+      "shanghainese",
+      "chinese",
+      "group friendly"
+    ],
     "description_en": "A Chinese restaurant option that works well when users want a sit-down meal with shared dishes.",
     "description_zhHant": "中式坐下來用餐的選擇，適合想點幾款菜一起分享的用戶。",
     "description_zhHans": "中式坐下来用餐的选择，适合想点几款菜一起分享的用户。",
     "recommendedFor_en": "Good for team lunch, family meals, or dinner with friends.",
     "recommendedFor_zhHant": "適合團隊午餐、家庭用餐或朋友晚餐。",
     "recommendedFor_zhHans": "适合团队午餐、家庭用餐或朋友晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-western-010",
@@ -177,17 +322,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Western",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["western", "belgian", "after work"],
+    "tags": [
+      "western",
+      "belgian",
+      "after work"
+    ],
     "description_en": "A Western option for users who want a more social lunch or after-work dinner setting.",
     "description_zhHant": "西式餐廳選擇，適合較社交的午餐或下班後晚餐。",
     "description_zhHans": "西式餐厅选择，适合较社交的午餐或下班后晚餐。",
     "recommendedFor_en": "Good for group meals, Friday lunch, or casual after-work dinner.",
     "recommendedFor_zhHant": "適合團體用餐、週五午餐或下班後輕鬆晚餐。",
     "recommendedFor_zhHans": "适合团体用餐、周五午餐或下班后轻松晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-korean-011",
@@ -196,17 +357,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Korean",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "normal",
-    "tags": ["korean", "casual", "comfort food"],
+    "tags": [
+      "korean",
+      "casual",
+      "comfort food"
+    ],
     "description_en": "A casual Korean choice for users who want a filling and familiar meal during the workday.",
     "description_zhHant": "輕鬆的韓式選擇，適合工作日想吃較飽肚、熟悉口味的一餐。",
     "description_zhHans": "轻松的韩式选择，适合工作日想吃较饱肚、熟悉口味的一餐。",
     "recommendedFor_en": "Good for casual lunch, friends, or a simple Korean dinner.",
     "recommendedFor_zhHant": "適合輕鬆午餐、朋友用餐或簡單韓式晚餐。",
     "recommendedFor_zhHans": "适合轻松午餐、朋友用餐或简单韩式晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-noodles-012",
@@ -215,17 +392,33 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Noodles",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["noodles", "spicy", "quick lunch"],
+    "tags": [
+      "noodles",
+      "spicy",
+      "quick lunch"
+    ],
     "description_en": "A quick noodle option for users who want an affordable and customizable bowl.",
     "description_zhHant": "快速米線選擇，適合想吃價錢較親民、可自行配搭的一碗麵食。",
     "description_zhHans": "快速米线选择，适合想吃价钱较亲民、可自行搭配的一碗面食。",
     "recommendedFor_en": "Good for solo lunch, spicy cravings, or quick dinner.",
     "recommendedFor_zhHant": "適合一人午餐、想吃辣或快速晚餐。",
     "recommendedFor_zhHans": "适合一人午餐、想吃辣或快速晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-fastfood-013",
@@ -234,17 +427,31 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Fast Food",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo"
+    ],
     "speed": "quick",
-    "tags": ["grab and go", "sandwich", "office lunch"],
+    "tags": [
+      "grab and go",
+      "sandwich",
+      "office lunch"
+    ],
     "description_en": "A convenient grab-and-go option for users who want a quick sandwich, salad, or coffee.",
     "description_zhHant": "方便快捷的外帶選擇，適合想買三文治、沙律或咖啡的用戶。",
     "description_zhHans": "方便快捷的外带选择，适合想买三文治、沙律或咖啡的用户。",
     "recommendedFor_en": "Good for busy office days and quick solo lunches.",
     "recommendedFor_zhHant": "適合忙碌工作日和快速一人午餐。",
     "recommendedFor_zhHans": "适合忙碌工作日和快速一人午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-western-014",
@@ -253,17 +460,34 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["pizza", "western", "group friendly"],
+    "tags": [
+      "pizza",
+      "western",
+      "group friendly"
+    ],
     "description_en": "A familiar pizza option for users who want an easy group meal with broad appeal.",
     "description_zhHant": "熟悉的薄餅選擇，適合想找容易接受的團體用餐地點。",
     "description_zhHans": "熟悉的披萨选择，适合想找容易接受的团体用餐地点。",
     "recommendedFor_en": "Good for group lunch, casual dates, or dinner with friends.",
     "recommendedFor_zhHant": "適合團體午餐、輕鬆約會或朋友晚餐。",
     "recommendedFor_zhHans": "适合团体午餐、轻松约会或朋友晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "quarry-bay-cafe-015",
@@ -272,17 +496,32 @@
     "district": "Eastern Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["coffee", "chain", "light meal"],
+    "tags": [
+      "coffee",
+      "chain",
+      "light meal"
+    ],
     "description_en": "A simple cafe-chain choice for a coffee break or light office-day lunch.",
     "description_zhHant": "簡單的咖啡連鎖選擇，適合咖啡休息或工作日輕食。",
     "description_zhHans": "简单的咖啡连锁选择，适合咖啡休息或工作日轻食。",
     "recommendedFor_en": "Good for solo breaks, quick coffee, or simple light meals.",
     "recommendedFor_zhHant": "適合一人休息、快速咖啡或簡單輕食。",
     "recommendedFor_zhHans": "适合一人休息、快速咖啡或简单轻食。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-cantonese-001",
@@ -291,17 +530,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Chinese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["roast goose", "local", "quick meal"],
+    "tags": [
+      "roast goose",
+      "local",
+      "quick meal"
+    ],
     "description_en": "A Central local-food option for users who want a classic Hong Kong-style meal without a long sit-down format.",
     "description_zhHant": "中環的本地餐飲選擇，適合想吃經典港式餐點而不想花太多時間的用戶。",
     "description_zhHans": "中环的本地餐饮选择，适合想吃经典港式餐点而不想花太多时间的用户。",
     "recommendedFor_en": "Good for solo lunch, visitors, or a quick local dinner.",
     "recommendedFor_zhHant": "適合一人午餐、旅客或快速本地晚餐。",
     "recommendedFor_zhHans": "适合一人午餐、旅客或快速本地晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-noodles-002",
@@ -310,17 +565,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Noodles",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["wonton noodles", "local", "quick lunch"],
+    "tags": [
+      "wonton noodles",
+      "local",
+      "quick lunch"
+    ],
     "description_en": "A noodle-focused Central pick for users who want something fast, simple, and very Hong Kong.",
     "description_zhHant": "中環的麵食選擇，適合想快速、簡單地吃一碗港式麵的用戶。",
     "description_zhHans": "中环的面食选择，适合想快速、简单地吃一碗港式面的用户。",
     "recommendedFor_en": "Good for quick solo lunch or a casual local-food stop.",
     "recommendedFor_zhHant": "適合快速一人午餐或輕鬆本地小吃。",
     "recommendedFor_zhHans": "适合快速一人午餐或轻松本地小吃。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-noodles-003",
@@ -329,17 +600,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Noodles",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["noodles", "local", "budget friendly"],
+    "tags": [
+      "noodles",
+      "local",
+      "budget friendly"
+    ],
     "description_en": "A budget-friendly noodle option for users who need a fast and filling meal in Central.",
     "description_zhHant": "中環較親民的麵食選擇，適合需要快速又飽肚的一餐。",
     "description_zhHans": "中环较亲民的面食选择，适合需要快速又饱肚的一餐。",
     "recommendedFor_en": "Good for quick lunch, solo meals, or casual food stops.",
     "recommendedFor_zhHant": "適合快速午餐、一人用餐或輕鬆小吃。",
     "recommendedFor_zhHans": "适合快速午餐、一人用餐或轻松小吃。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-chinese-004",
@@ -348,17 +635,34 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch", "date"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch",
+      "date"
+    ],
     "speed": "relaxed",
-    "tags": ["dim sum", "heritage", "traditional"],
+    "tags": [
+      "dim sum",
+      "heritage",
+      "traditional"
+    ],
     "description_en": "A traditional Central tea-house choice for users who want a more classic and slower Cantonese dining experience.",
     "description_zhHant": "中環傳統茶樓選擇，適合想體驗較經典、慢節奏粵式用餐的用戶。",
     "description_zhHans": "中环传统茶楼选择，适合想体验较经典、慢节奏粤式用餐的用户。",
     "recommendedFor_en": "Good for traditional dim sum, visitors, or relaxed group meals.",
     "recommendedFor_zhHant": "適合傳統點心、招待訪客或悠閒團體用餐。",
     "recommendedFor_zhHans": "适合传统点心、招待访客或悠闲团体用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-sichuan-005",
@@ -367,17 +671,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date"
+    ],
     "speed": "relaxed",
-    "tags": ["sichuan", "spicy", "dinner"],
+    "tags": [
+      "sichuan",
+      "spicy",
+      "dinner"
+    ],
     "description_en": "A Sichuan option for users who want a stronger spice profile and a more expressive dinner choice.",
     "description_zhHant": "川菜選擇，適合想吃較重香辣口味和更有特色晚餐的用戶。",
     "description_zhHans": "川菜选择，适合想吃较重香辣口味和更有特色晚餐的用户。",
     "recommendedFor_en": "Good for spicy cravings, dinner with friends, or casual dates.",
     "recommendedFor_zhHant": "適合想吃辣、朋友晚餐或輕鬆約會。",
     "recommendedFor_zhHans": "适合想吃辣、朋友晚餐或轻松约会。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-japanese-006",
@@ -386,17 +706,34 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Japanese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["date", "friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "date",
+      "friends",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["japanese", "premium", "special occasion"],
+    "tags": [
+      "japanese",
+      "premium",
+      "special occasion"
+    ],
     "description_en": "A premium Japanese option for users looking for a polished Central meal with a social atmosphere.",
     "description_zhHant": "中環較高端的日式選擇，適合想要精緻環境和社交氣氛的用戶。",
     "description_zhHans": "中环较高端的日式选择，适合想要精致环境和社交气氛的用户。",
     "recommendedFor_en": "Good for dates, special lunches, or premium group dinners.",
     "recommendedFor_zhHant": "適合約會、特別午餐或較高端的團體晚餐。",
     "recommendedFor_zhHans": "适合约会、特别午餐或较高端的团体晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-western-007",
@@ -405,17 +742,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Western",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["western", "belgian", "after work"],
+    "tags": [
+      "western",
+      "belgian",
+      "after work"
+    ],
     "description_en": "A social Western dining option for users who want a lively lunch or after-work meal in Central.",
     "description_zhHant": "中環較適合社交的西式餐廳，適合熱鬧午餐或下班後用餐。",
     "description_zhHans": "中环较适合社交的西式餐厅，适合热闹午餐或下班后用餐。",
     "recommendedFor_en": "Good for team meals, friends, or Friday dinner.",
     "recommendedFor_zhHant": "適合團隊用餐、朋友聚餐或週五晚餐。",
     "recommendedFor_zhHans": "适合团队用餐、朋友聚餐或周五晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-italian-008",
@@ -424,17 +777,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date"
+    ],
     "speed": "normal",
-    "tags": ["italian", "pasta", "casual"],
+    "tags": [
+      "italian",
+      "pasta",
+      "casual"
+    ],
     "description_en": "A casual pasta choice for users who want a comfortable Western meal without going fully formal.",
     "description_zhHant": "輕鬆的意粉選擇，適合想吃西餐但不想太正式的用戶。",
     "description_zhHans": "轻松的意粉选择，适合想吃西餐但不想太正式的用户。",
     "recommendedFor_en": "Good for casual dates, friends, or easy dinners.",
     "recommendedFor_zhHant": "適合輕鬆約會、朋友用餐或簡單晚餐。",
     "recommendedFor_zhHans": "适合轻松约会、朋友用餐或简单晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-vietnamese-009",
@@ -443,17 +812,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Vietnamese",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["vietnamese", "sandwich", "quick lunch"],
+    "tags": [
+      "vietnamese",
+      "sandwich",
+      "quick lunch"
+    ],
     "description_en": "A quick Vietnamese-style option for users who want something light, casual, and easy to grab.",
     "description_zhHant": "快速越式選擇，適合想吃輕便、休閒又容易外帶的用戶。",
     "description_zhHans": "快速越式选择，适合想吃轻便、休闲又容易外带的用户。",
     "recommendedFor_en": "Good for quick lunch, solo meals, or casual takeaway.",
     "recommendedFor_zhHant": "適合快速午餐、一人用餐或輕鬆外帶。",
     "recommendedFor_zhHans": "适合快速午餐、一人用餐或轻松外带。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-thai-010",
@@ -462,17 +847,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Thai",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date"
+    ],
     "speed": "normal",
-    "tags": ["thai", "noodles", "casual dinner"],
+    "tags": [
+      "thai",
+      "noodles",
+      "casual dinner"
+    ],
     "description_en": "A Thai option for users who want bold flavours and a casual but memorable meal.",
     "description_zhHant": "泰式選擇，適合想吃濃郁風味、輕鬆但有記憶點的一餐。",
     "description_zhHans": "泰式选择，适合想吃浓郁风味、轻松但有记忆点的一餐。",
     "recommendedFor_en": "Good for dinner with friends, casual dates, or Thai cravings.",
     "recommendedFor_zhHant": "適合朋友晚餐、輕鬆約會或想吃泰菜時。",
     "recommendedFor_zhHans": "适合朋友晚餐、轻松约会或想吃泰菜时。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-western-011",
@@ -481,17 +882,32 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Western",
     "budget": "$$$",
-    "mealTypes": ["dinner"],
-    "situations": ["date", "friends"],
+    "mealTypes": [
+      "dinner"
+    ],
+    "situations": [
+      "date",
+      "friends"
+    ],
     "speed": "relaxed",
-    "tags": ["bar", "burger", "after work"],
+    "tags": [
+      "bar",
+      "burger",
+      "after work"
+    ],
     "description_en": "A polished Western bar-and-dining choice for users deciding where to go after work.",
     "description_zhHant": "較精緻的西式酒吧餐飲選擇，適合下班後想找地方吃喝的用戶。",
     "description_zhHans": "较精致的西式酒吧餐饮选择，适合下班后想找地方吃喝的用户。",
     "recommendedFor_en": "Good for after-work dinner, drinks, or casual dates.",
     "recommendedFor_zhHant": "適合下班後晚餐、飲品或輕鬆約會。",
     "recommendedFor_zhHans": "适合下班后晚餐、饮品或轻松约会。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-western-012",
@@ -500,17 +916,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Fast Food",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["burger", "fast casual", "quick meal"],
+    "tags": [
+      "burger",
+      "fast casual",
+      "quick meal"
+    ],
     "description_en": "A fast-casual burger option for users who want a predictable and easy meal in Central.",
     "description_zhHant": "中環的快休閒漢堡選擇，適合想吃穩定又簡單一餐的用戶。",
     "description_zhHans": "中环的快休闲汉堡选择，适合想吃稳定又简单一餐的用户。",
     "recommendedFor_en": "Good for quick lunch, casual dinner, or friends.",
     "recommendedFor_zhHant": "適合快速午餐、輕鬆晚餐或朋友用餐。",
     "recommendedFor_zhHans": "适合快速午餐、轻松晚餐或朋友用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-korean-013",
@@ -519,17 +951,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Korean",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["korean", "quick meal", "casual"],
+    "tags": [
+      "korean",
+      "quick meal",
+      "casual"
+    ],
     "description_en": "A casual Korean pick for users who want a simple and filling meal during a busy Central day.",
     "description_zhHant": "輕鬆韓式選擇，適合在繁忙中環工作日想吃簡單又飽肚的一餐。",
     "description_zhHans": "轻松韩式选择，适合在繁忙中环工作日想吃简单又饱肚的一餐。",
     "recommendedFor_en": "Good for quick Korean lunch, solo meals, or casual dinner.",
     "recommendedFor_zhHant": "適合快速韓式午餐、一人用餐或輕鬆晚餐。",
     "recommendedFor_zhHans": "适合快速韩式午餐、一人用餐或轻松晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-cafe-014",
@@ -538,17 +986,33 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends", "date"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends",
+      "date"
+    ],
     "speed": "normal",
-    "tags": ["coffee", "brunch", "cafe"],
+    "tags": [
+      "coffee",
+      "brunch",
+      "cafe"
+    ],
     "description_en": "A cafe pick for users who want coffee, brunch-style food, or a slower daytime meal.",
     "description_zhHant": "咖啡店選擇，適合想喝咖啡、吃早午餐風格食物或慢一點的日間餐。",
     "description_zhHans": "咖啡店选择，适合想喝咖啡、吃早午餐风格食物或慢一点的日间餐。",
     "recommendedFor_en": "Good for coffee meetings, solo breaks, or casual brunch.",
     "recommendedFor_zhHant": "適合咖啡會面、一人休息或輕鬆早午餐。",
     "recommendedFor_zhHans": "适合咖啡会面、一人休息或轻松早午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "central-cafe-015",
@@ -557,17 +1021,32 @@
     "district": "Central and Western Hong Kong",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["coffee", "light lunch", "solo friendly"],
+    "tags": [
+      "coffee",
+      "light lunch",
+      "solo friendly"
+    ],
     "description_en": "A clean cafe choice for users who need coffee, a light meal, or a focused solo break in Central.",
     "description_zhHant": "簡潔咖啡店選擇，適合在中環想喝咖啡、吃輕食或一個人休息的用戶。",
     "description_zhHans": "简洁咖啡店选择，适合在中环想喝咖啡、吃轻食或一个人休息的用户。",
     "recommendedFor_en": "Good for solo lunch, coffee breaks, or light office meals.",
     "recommendedFor_zhHant": "適合一人午餐、咖啡休息或工作日輕食。",
     "recommendedFor_zhHans": "适合一人午餐、咖啡休息或工作日轻食。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-indonesian-001",
@@ -576,17 +1055,33 @@
     "district": "Kwun Tong District",
     "cuisine": "Thai",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["indonesian", "southeast asian", "casual"],
+    "tags": [
+      "indonesian",
+      "southeast asian",
+      "casual"
+    ],
     "description_en": "A Southeast Asian-style option in Kwun Tong for users who want something aromatic and different from the usual office lunch.",
     "description_zhHant": "觀塘的東南亞風味選擇，適合想吃較有香料感、不同於一般工作午餐的用戶。",
     "description_zhHans": "观塘的东南亚风味选择，适合想吃较有香料感、不同于一般工作午餐的用户。",
     "recommendedFor_en": "Good for friends, casual group lunches, or Southeast Asian cravings.",
     "recommendedFor_zhHant": "適合朋友、輕鬆團體午餐或想吃東南亞菜時。",
     "recommendedFor_zhHans": "适合朋友、轻松团体午餐或想吃东南亚菜时。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-dimsum-002",
@@ -595,17 +1090,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch", "family"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch",
+      "family"
+    ],
     "speed": "normal",
-    "tags": ["dim sum", "chinese", "group friendly"],
+    "tags": [
+      "dim sum",
+      "chinese",
+      "group friendly"
+    ],
     "description_en": "A dim sum option for users who want a shared Cantonese meal in Kwun Tong.",
     "description_zhHant": "觀塘的點心選擇，適合想和同事或朋友分享粵式餐點的用戶。",
     "description_zhHans": "观塘的点心选择，适合想和同事或朋友分享粤式餐点的用户。",
     "recommendedFor_en": "Good for team lunch, family meals, or casual dim sum.",
     "recommendedFor_zhHant": "適合團隊午餐、家庭用餐或輕鬆飲茶。",
     "recommendedFor_zhHans": "适合团队午餐、家庭用餐或轻松饮茶。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-western-003",
@@ -614,17 +1126,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["western", "waterfront", "casual dinner"],
+    "tags": [
+      "western",
+      "waterfront",
+      "casual dinner"
+    ],
     "description_en": "A Western-style Kwun Tong option for users who want a casual sit-down meal with a more open, social feel.",
     "description_zhHant": "觀塘西式餐廳選擇，適合想坐下來吃一餐並帶有社交感的用戶。",
     "description_zhHans": "观塘西式餐厅选择，适合想坐下来吃一餐并带有社交感的用户。",
     "recommendedFor_en": "Good for dinner with friends, casual dates, or relaxed team meals.",
     "recommendedFor_zhHant": "適合朋友晚餐、輕鬆約會或較悠閒的團隊用餐。",
     "recommendedFor_zhHans": "适合朋友晚餐、轻松约会或较悠闲的团队用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-thai-004",
@@ -633,17 +1162,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Thai",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["thai", "vietnamese", "southeast asian"],
+    "tags": [
+      "thai",
+      "vietnamese",
+      "southeast asian"
+    ],
     "description_en": "A Southeast Asian option for users who want Thai or Vietnamese-style flavours in Kwun Tong.",
     "description_zhHant": "觀塘東南亞菜選擇，適合想吃泰式或越式風味的用戶。",
     "description_zhHans": "观塘东南亚菜选择，适合想吃泰式或越式风味的用户。",
     "recommendedFor_en": "Good for friends, casual dinners, or team lunches with variety.",
     "recommendedFor_zhHant": "適合朋友、輕鬆晚餐或想有多些選擇的團隊午餐。",
     "recommendedFor_zhHans": "适合朋友、轻松晚餐或想有多些选择的团队午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-chinese-005",
@@ -652,17 +1198,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch", "family"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch",
+      "family"
+    ],
     "speed": "relaxed",
-    "tags": ["chinese", "seafood", "group meal"],
+    "tags": [
+      "chinese",
+      "seafood",
+      "group meal"
+    ],
     "description_en": "A long-standing Chinese restaurant option in Kwun Tong for users looking for a fuller group meal.",
     "description_zhHant": "觀塘較有歷史的中式餐廳選擇，適合想吃較完整團體餐的用戶。",
     "description_zhHans": "观塘较有历史的中式餐厅选择，适合想吃较完整团体餐的用户。",
     "recommendedFor_en": "Good for group dinners, family meals, or larger team lunches.",
     "recommendedFor_zhHant": "適合團體晚餐、家庭用餐或較大型團隊午餐。",
     "recommendedFor_zhHans": "适合团体晚餐、家庭用餐或较大型团队午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-western-006",
@@ -671,17 +1234,33 @@
     "district": "Kwun Tong District",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["western", "burger", "lunch crowd"],
+    "tags": [
+      "western",
+      "burger",
+      "lunch crowd"
+    ],
     "description_en": "A Western lunch-friendly option in Kwun Tong for users who want burgers, steaks, or casual comfort food.",
     "description_zhHant": "觀塘適合午餐的西式選擇，適合想吃漢堡、扒類或輕鬆 comfort food 的用戶。",
     "description_zhHans": "观塘适合午餐的西式选择，适合想吃汉堡、扒类或轻松 comfort food 的用户。",
     "recommendedFor_en": "Good for office lunch, friends, or casual Western dinners.",
     "recommendedFor_zhHant": "適合工作午餐、朋友用餐或輕鬆西式晚餐。",
     "recommendedFor_zhHans": "适合工作午餐、朋友用餐或轻松西式晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-taiwanese-007",
@@ -690,17 +1269,33 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "normal",
-    "tags": ["taiwanese", "casual", "comfort food"],
+    "tags": [
+      "taiwanese",
+      "casual",
+      "comfort food"
+    ],
     "description_en": "A Taiwanese-style option for users who want a casual, filling, and familiar meal in Kwun Tong.",
     "description_zhHant": "台式餐飲選擇，適合在觀塘想吃輕鬆、飽肚又熟悉口味的一餐。",
     "description_zhHans": "台式餐饮选择，适合在观塘想吃轻松、饱肚又熟悉口味的一餐。",
     "recommendedFor_en": "Good for solo lunch, casual friends, or quick comfort food.",
     "recommendedFor_zhHant": "適合一人午餐、朋友輕鬆用餐或快速 comfort food。",
     "recommendedFor_zhHans": "适合一人午餐、朋友轻松用餐或快速 comfort food。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-italian-008",
@@ -709,17 +1304,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "normal",
-    "tags": ["italian", "western", "casual"],
+    "tags": [
+      "italian",
+      "western",
+      "casual"
+    ],
     "description_en": "A Western/Italian-style option for users looking for a comfortable sit-down meal around Kwun Tong.",
     "description_zhHant": "觀塘西式／意式選擇，適合想找舒適坐下來用餐的用戶。",
     "description_zhHans": "观塘西式／意式选择，适合想找舒适坐下来用餐的用户。",
     "recommendedFor_en": "Good for casual dates, friends, or office team lunches.",
     "recommendedFor_zhHant": "適合輕鬆約會、朋友用餐或辦公室團隊午餐。",
     "recommendedFor_zhHans": "适合轻松约会、朋友用餐或办公室团队午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-cafe-009",
@@ -728,17 +1340,32 @@
     "district": "Kwun Tong District",
     "cuisine": "Cafe",
     "budget": "$$",
-    "mealTypes": ["lunch"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "normal",
-    "tags": ["cafe", "coffee", "light lunch"],
+    "tags": [
+      "cafe",
+      "coffee",
+      "light lunch"
+    ],
     "description_en": "A cafe choice for users who want coffee, light food, or a quieter lunch break in Kwun Tong.",
     "description_zhHant": "觀塘咖啡店選擇，適合想喝咖啡、吃輕食或有較安靜午餐休息的用戶。",
     "description_zhHans": "观塘咖啡店选择，适合想喝咖啡、吃轻食或有较安静午餐休息的用户。",
     "recommendedFor_en": "Good for solo breaks, coffee meetings, or light meals.",
     "recommendedFor_zhHant": "適合一人休息、咖啡會面或輕食。",
     "recommendedFor_zhHans": "适合一人休息、咖啡会面或轻食。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-western-010",
@@ -747,17 +1374,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Western",
     "budget": "$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends",
+      "team lunch"
+    ],
     "speed": "quick",
-    "tags": ["western", "healthy", "quick lunch"],
+    "tags": [
+      "western",
+      "healthy",
+      "quick lunch"
+    ],
     "description_en": "A convenient Western-style option for users who want a practical lunch with lighter or balanced choices.",
     "description_zhHant": "方便的西式選擇，適合想吃較實用、較輕盈或均衡午餐的用戶。",
     "description_zhHans": "方便的西式选择，适合想吃较实用、较轻盈或均衡午餐的用户。",
     "recommendedFor_en": "Good for quick office lunch, solo meals, or casual team orders.",
     "recommendedFor_zhHant": "適合快速工作午餐、一人用餐或團隊簡單點餐。",
     "recommendedFor_zhHans": "适合快速工作午餐、一人用餐或团队简单点餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-chinese-011",
@@ -766,17 +1410,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["chiu chow", "chinese", "upstairs dining"],
+    "tags": [
+      "chiu chow",
+      "chinese",
+      "upstairs dining"
+    ],
     "description_en": "A refined Chinese option in Kwun Tong for users who want something more special than a standard office lunch.",
     "description_zhHant": "觀塘較精緻的中式餐廳選擇，適合想吃比一般工作午餐更特別的一餐。",
     "description_zhHans": "观塘较精致的中式餐厅选择，适合想吃比一般工作午餐更特别的一餐。",
     "recommendedFor_en": "Good for client meals, special dinners, or polished team lunches.",
     "recommendedFor_zhHant": "適合客戶用餐、特別晚餐或較正式團隊午餐。",
     "recommendedFor_zhHans": "适合客户用餐、特别晚餐或较正式团队午餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-chinese-012",
@@ -785,17 +1446,34 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["friends", "date", "team lunch"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date",
+      "team lunch"
+    ],
     "speed": "relaxed",
-    "tags": ["shanghainese", "huaiyang", "upstairs dining"],
+    "tags": [
+      "shanghainese",
+      "huaiyang",
+      "upstairs dining"
+    ],
     "description_en": "A refined Chinese dining option in Kwun Tong for users who want a more elevated meal.",
     "description_zhHant": "觀塘較高級的中式餐飲選擇，適合想要更精緻一餐的用戶。",
     "description_zhHans": "观塘较高级的中式餐饮选择，适合想要更精致一餐的用户。",
     "recommendedFor_en": "Good for special lunches, client meals, or relaxed dinners.",
     "recommendedFor_zhHant": "適合特別午餐、客戶用餐或悠閒晚餐。",
     "recommendedFor_zhHans": "适合特别午餐、客户用餐或悠闲晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-chinese-013",
@@ -804,17 +1482,33 @@
     "district": "Kwun Tong District",
     "cuisine": "Chinese",
     "budget": "$$$",
-    "mealTypes": ["dinner"],
-    "situations": ["friends", "team lunch", "family"],
+    "mealTypes": [
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "team lunch",
+      "family"
+    ],
     "speed": "relaxed",
-    "tags": ["seafood", "spicy", "group dinner"],
+    "tags": [
+      "seafood",
+      "spicy",
+      "group dinner"
+    ],
     "description_en": "A seafood-oriented Chinese option for users looking for a fuller group dinner in Kwun Tong.",
     "description_zhHant": "以海鮮為主的中式選擇，適合在觀塘想吃較豐富團體晚餐的用戶。",
     "description_zhHans": "以海鲜为主的中式选择，适合在观塘想吃较丰富团体晚餐的用户。",
     "recommendedFor_en": "Good for seafood dinners, larger groups, or family meals.",
     "recommendedFor_zhHant": "適合海鮮晚餐、較大團體或家庭用餐。",
     "recommendedFor_zhHans": "适合海鲜晚餐、较大团体或家庭用餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-noodles-014",
@@ -823,17 +1517,33 @@
     "district": "Kwun Tong District",
     "cuisine": "Noodles",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["noodles", "spicy", "budget friendly"],
+    "tags": [
+      "noodles",
+      "spicy",
+      "budget friendly"
+    ],
     "description_en": "A fast and affordable noodle choice for users who want a customizable bowl during a busy day.",
     "description_zhHant": "快速又親民的米線選擇，適合忙碌日子想吃可自行配搭的一碗麵食。",
     "description_zhHans": "快速又亲民的米线选择，适合忙碌日子想吃可自行搭配的一碗面食。",
     "recommendedFor_en": "Good for solo lunch, quick dinner, or spicy cravings.",
     "recommendedFor_zhHant": "適合一人午餐、快速晚餐或想吃辣時。",
     "recommendedFor_zhHans": "适合一人午餐、快速晚餐或想吃辣时。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   },
   {
     "id": "kwun-tong-fastfood-015",
@@ -842,16 +1552,32 @@
     "district": "Kwun Tong District",
     "cuisine": "Fast Food",
     "budget": "$",
-    "mealTypes": ["lunch", "dinner"],
-    "situations": ["solo", "friends"],
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
     "speed": "quick",
-    "tags": ["burger", "fast food", "quick meal"],
+    "tags": [
+      "burger",
+      "fast food",
+      "quick meal"
+    ],
     "description_en": "A quick fast-food choice for users who need a simple, predictable meal in Kwun Tong.",
     "description_zhHant": "觀塘快速餐飲選擇，適合需要簡單、穩定一餐的用戶。",
     "description_zhHans": "观塘快速餐饮选择，适合需要简单、稳定一餐的用户。",
     "recommendedFor_en": "Good for quick lunch, solo meals, or casual fast dinner.",
     "recommendedFor_zhHant": "適合快速午餐、一人用餐或輕鬆快餐晚餐。",
     "recommendedFor_zhHans": "适合快速午餐、一人用餐或轻松快餐晚餐。",
-    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied."
+    "sourceNote": "Manually curated from public restaurant discovery sources. No reviews, ratings, photos, or menu text copied.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": true,
+    "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
   }
 ]
