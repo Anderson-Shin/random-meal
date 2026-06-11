@@ -153,6 +153,17 @@ Use external sources only for factual confirmation.
 - Treat unofficial OpenRice API repositories as risky and not production-approved.
 - If a future task proposes data import, keep it local and private first. Do not integrate it into Cloudflare Pages or frontend code.
 
+## OpenRice Repository Policy
+
+- The reviewed `cal65/Open-Rice` repository is classified as an unofficial HTML scraper.
+- Do not integrate it into production.
+- Do not add it to Cloudflare Pages.
+- Do not add it to frontend JavaScript.
+- Do not add Python scraping scripts or dependencies unless a future task explicitly approves a local-only prototype.
+- Do not store or display smiles, frowns, OpenRice ratings, reviews, rankings, photos, menu text, promotional copy, or raw HTML.
+- Treat `restaurant_name`, `address`, `region`, and cuisine/type fields only as temporary discovery hints.
+- Cross-check any candidate restaurant discovered from this source with stronger sources before public display.
+
 ## Data Verification Workflow
 
 Verify restaurants district by district:
@@ -258,7 +269,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7R follow-up: Decide data source expansion workflow and proposed source metadata fields
+Task 7T: Decide whether to add proposed source metadata fields to restaurants.json
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.

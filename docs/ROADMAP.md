@@ -74,9 +74,12 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Create DATA_SOURCE_STRATEGY.md
 - [x] Update CODEX_INSTRUCTIONS.md with data source strategy rules
 - [x] Pause branch-level manual verification until data source strategy is finalized
-- [ ] Decide whether unofficial OpenRice API repositories should be avoided or tested locally only
-- [ ] Design expanded restaurant source metadata fields
-- [ ] Create safe restaurant data expansion workflow
+- [x] Decide whether unofficial OpenRice API repositories should be avoided or tested locally only
+- [x] Classify cal65/Open-Rice as an unofficial scraper, not a production API
+- [x] Document field-level treatment for OpenRice scraper output
+- [x] Design proposed restaurant source metadata fields
+- [ ] Decide whether to add proposed source metadata fields to restaurants.json
+- [ ] Create local-only data discovery prototype, if approved
 
 ## v0.5.0 UX Improvements
 
@@ -128,10 +131,11 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Review DATA_SOURCE_STRATEGY.md.
-2. Decide whether unofficial OpenRice API repositories are allowed for local research only or avoided entirely.
-3. Design expanded source metadata fields.
-4. Then decide whether to resume manual verification or build a local-only import prototype.
+1. Review proposed source metadata fields.
+2. Decide whether to add source metadata fields to restaurants.json.
+3. If approved, update DATA_SCHEMA.md from proposed fields to active fields.
+4. Only then consider a local-only discovery prototype.
+5. Do not resume mass data expansion until source metadata is finalized.
 
 ## Short Codex Prompt Pattern
 

@@ -97,6 +97,66 @@ After a successful manual check, use:
 }
 ```
 
+## Proposed Future Source Metadata Fields
+
+The following fields are proposed for a future schema task:
+
+```json
+{
+  "sourceLinks": [
+    {
+      "type": "official_website",
+      "url": "https://example.com",
+      "checkedAt": "2026-06-11",
+      "usage": "verification",
+      "note": "Official source confirms location and current listing."
+    }
+  ],
+  "sourceConfidence": "medium",
+  "dataOrigin": "manual_curation"
+}
+```
+
+Proposed `sourceLinks[].type` values:
+
+- `official_website`
+- `official_social`
+- `mall_directory`
+- `building_directory`
+- `google_business_profile`
+- `openrice_listing`
+- `local_research`
+- `user_suggestion`
+
+Proposed `sourceLinks[].usage` values:
+
+- `discovery`
+- `verification`
+- `cross_check`
+- `do_not_publish`
+
+Proposed `sourceConfidence` values:
+
+- `low`
+- `medium`
+- `high`
+
+Proposed `dataOrigin` values:
+
+- `manual_curation`
+- `official_source`
+- `mall_directory`
+- `user_suggestion`
+- `local_research`
+- `discovery_source_only`
+
+Rules:
+
+- These fields are proposed only and must not be added to `assets/data/restaurants.json` in this task.
+- OpenRice source links may be stored only as internal references.
+- OpenRice-derived review, rating, ranking, photo, menu, or promotional data must not be stored.
+- `sourceConfidence: high` requires stronger confirmation than OpenRice alone.
+
 ## Data Rules
 
 - Do not scrape restaurant websites, platforms, or directories.

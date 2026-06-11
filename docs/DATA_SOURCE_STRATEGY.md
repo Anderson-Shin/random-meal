@@ -85,6 +85,56 @@ Policy:
 - If tested later, test only locally and privately for research.
 - Any future use requires a separate technical and legal risk review document.
 
+## Reviewed Repository: cal65/Open-Rice
+
+The reviewed `cal65/Open-Rice` repository should be treated as an unofficial OpenRice HTML scraper, not an official API.
+
+The repository:
+
+- Uses Python, `requests`, and BeautifulSoup
+- Accepts an OpenRice search URL
+- Requests and parses OpenRice HTML
+- Extracts restaurant name, address, price, smiles, frowns, cuisine/type fields, and region
+
+Because it scrapes OpenRice HTML:
+
+- Do not integrate it into production.
+- Do not use it in Cloudflare Pages or frontend code.
+- Do not use it to populate the public database automatically.
+- Consider it only for local and private research if the project owner explicitly approves a later local-only prototype task.
+
+## OpenRice Scraper Policy Decision
+
+Unofficial OpenRice scraper repositories are not production-approved. They may be considered only as local and private discovery tools. They must not be connected to the public website. They must not be used to copy or republish OpenRice reviews, ratings, rankings, photos, menu text, promotional copy, or raw HTML.
+
+## Field Treatment for cal65/Open-Rice
+
+### Allowed only as temporary discovery hints
+
+- `restaurant_name`
+- `address`
+- `type1`
+- `type2`
+- `type3`
+- `type4`
+- `region`
+
+These fields may only be used to identify candidate restaurants. Every candidate must be cross-checked against stronger sources before public use.
+
+### Disallowed for public database use
+
+- `price`
+- `smiles`
+- `frowns`
+- Raw HTML
+- OpenRice-derived rankings
+- OpenRice reviews
+- OpenRice photos
+- OpenRice menu text
+- OpenRice promotional copy
+
+`price`, `smiles`, and `frowns` are platform-derived fields and must not be stored or displayed in the public database.
+
 ## Safe Source Hierarchy
 
 Use this hierarchy for future restaurant confirmation:
@@ -120,9 +170,10 @@ The following fields are proposed for a future schema task:
 {
   "sourceLinks": [
     {
-      "type": "official",
+      "type": "official_website",
       "url": "https://example.com",
       "checkedAt": "2026-06-11",
+      "usage": "verification",
       "note": "Official branch page confirms district and current listing."
     }
   ],
@@ -143,6 +194,7 @@ Allowed `dataOrigin` values:
 - `official_source`
 - `mall_directory`
 - `user_suggestion`
+- `local_research`
 - `discovery_source_only`
 
 These are proposed fields only. Do not add them to `assets/data/restaurants.json` in this task.
@@ -181,8 +233,8 @@ These are proposed fields only. Do not add them to `assets/data/restaurants.json
 
 ## Recommended Next Steps
 
-1. Decide whether unofficial OpenRice API repositories should be avoided entirely or tested locally only.
-2. Design future source metadata fields.
-3. Create a local-only data import prototype if needed.
-4. Expand restaurant coverage district by district.
-5. Resume branch-level verification after the source strategy is accepted.
+1. Review the proposed source metadata fields.
+2. Decide whether to add the proposed fields to `assets/data/restaurants.json`.
+3. If approved, promote the proposed fields to active schema fields.
+4. Only then consider a separately approved local-only discovery prototype.
+5. Do not resume mass data expansion until source metadata is finalized.

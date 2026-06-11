@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.4.3 - Data source strategy added**
+**v0.4.4 - OpenRice scraper policy documented**
 
 The working static MVP includes filters, decision tools, multilingual core UI, Cloudflare Pages deployment, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -66,6 +66,8 @@ See:
 Restaurant data is manually curated and now includes verification fields. Entries remain first-pass until manually verified.
 
 Before expanding the database, review the data source strategy to avoid copying third-party reviews, ratings, photos, menu text, or other protected content.
+
+The reviewed `cal65/Open-Rice` repository is treated as an unofficial scraper and is not approved for production or frontend integration.
 
 See:
 
