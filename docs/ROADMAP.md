@@ -26,13 +26,13 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## v0.3.0 SEO Pages
 
-- [ ] Create Quarry Bay page
-- [ ] Create Central page
-- [ ] Create Kwun Tong page
-- [ ] Create sitemap.xml
-- [ ] Create robots.txt
-- [ ] Add Open Graph metadata
-- [ ] Add internal links
+- [x] Create Quarry Bay page
+- [x] Create Central page
+- [x] Create Kwun Tong page
+- [x] Create sitemap.xml
+- [x] Create robots.txt
+- [x] Add Open Graph metadata
+- [x] Add internal links
 
 ## v0.4.0 Data Quality
 
@@ -73,6 +73,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - The MVP has no maps, live opening hours, booking, ratings, or user submissions.
 - Preferences and results do not sync across devices.
 - Multilingual content quality depends on manual writing and review.
+- `sitemap.xml` and `robots.txt` currently use `https://example.com` and must be updated after a production domain is connected.
 
 ## Release Checklist
 
@@ -89,7 +90,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Manually verify restaurant names and current availability.
-2. Create SEO pages for Quarry Bay, Central, and Kwun Tong.
-3. Create `sitemap.xml` and `robots.txt`.
-4. Add internal links between the homepage and district pages.
+1. Replace sitemap placeholder domain after domain setup.
+2. Manually verify restaurant information.
+3. Test district pages on mobile.
+4. Prepare Cloudflare Pages deployment.
