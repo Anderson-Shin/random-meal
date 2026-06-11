@@ -34,7 +34,7 @@
 
 - [ ] Choose production domain
 - [ ] Connect custom domain to Cloudflare Pages
-- [ ] Replace `https://example.com`
+- [ ] Replace `https://what-should-i-eat-hk.pages.dev`
 - [ ] Re-test sitemap
 - [ ] Re-test robots.txt
 - [ ] Re-test canonical URLs

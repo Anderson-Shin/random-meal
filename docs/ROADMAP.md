@@ -71,7 +71,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 - [ ] Final mobile check
 - [ ] Final SEO check
-- [ ] Deploy to Cloudflare Pages
+- [x] Deploy to Cloudflare Pages
 - [ ] Connect custom domain
 - [ ] Submit sitemap to Google Search Console
 - [ ] Apply for Google AdSense
@@ -83,7 +83,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - The MVP has no maps, live opening hours, booking, ratings, or user submissions.
 - Preferences and results do not sync across devices.
 - Multilingual content quality depends on manual writing and review.
-- `sitemap.xml` and `robots.txt` currently use `https://example.com` and must be updated after a production domain is connected.
+- `sitemap.xml`, `robots.txt`, canonical URLs, and Open Graph URLs currently use `https://what-should-i-eat-hk.pages.dev` and must be updated after a custom domain is connected.
 
 ## Release Checklist
 
@@ -100,8 +100,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Deploy to Cloudflare Pages.
-2. Run QA checklist on deployed URL.
-3. Choose and connect production domain.
-4. Replace `https://example.com` after domain setup.
-5. Start v0.4.0 restaurant data verification.
+1. Run QA checklist on the deployed URL.
+2. Choose and connect a custom domain.
+3. Replace `https://what-should-i-eat-hk.pages.dev` after custom domain setup.
+4. Start v0.4.0 restaurant data verification.

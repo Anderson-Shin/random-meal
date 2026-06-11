@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.3.5 - Deployment preparation**
+**v0.3.5 - Deployed to Cloudflare Pages**
 
 The working static MVP includes filters, decision tools, multilingual core UI, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -41,7 +41,7 @@ The project currently includes district SEO pages for:
 - Central
 - Kwun Tong
 
-The sitemap and robots files currently use `https://example.com` as a placeholder. Replace it with the production domain after connecting a custom domain.
+The site is deployed at [what-should-i-eat-hk.pages.dev](https://what-should-i-eat-hk.pages.dev). Sitemap, robots, canonical, and Open Graph URLs currently use this Pages domain. Replace it after connecting a custom domain.
 
 ## Deployment
 

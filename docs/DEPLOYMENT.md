@@ -62,12 +62,18 @@ Use [QA_CHECKLIST.md](QA_CHECKLIST.md) for the complete test pass.
 
 ## Production Domain Update
 
-Do not change the placeholder before the production domain is finalized.
+The current production URL is:
+
+```text
+https://what-should-i-eat-hk.pages.dev
+```
+
+Do not replace it before a custom domain is finalized.
 
 After connecting a production domain, search the project for:
 
 ```text
-https://example.com
+https://what-should-i-eat-hk.pages.dev
 ```
 
 Replace it with:
