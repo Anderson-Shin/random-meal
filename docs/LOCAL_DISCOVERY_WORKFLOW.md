@@ -94,6 +94,15 @@ Always discard:
 - Promotional copy
 - Raw HTML
 
+## Prototype Planning
+
+The project now has a [Local-Only Discovery Prototype Plan](LOCAL_DISCOVERY_PROTOTYPE_PLAN.md).
+
+- The first approved implementation direction should be file-only local normalization.
+- Direct OpenRice URL fetching is not approved.
+- Saved HTML parsing is optional and requires separate approval.
+- URL-fetch scraping is strongly discouraged and not approved.
+
 ## Candidate Review Stage
 
 Before a candidate can enter `assets/data/restaurants.json`, check:
@@ -139,8 +148,8 @@ New candidate entries from weak discovery sources should usually start with `pub
 
 ## Recommended Future Tasks
 
-1. Review the local candidate template.
-2. Review the manual candidate worksheet.
-3. Decide whether to test `cal65/Open-Rice` locally.
-4. If approved, create a separate local-only prototype task.
-5. Do not run scraping or expand the public database until explicitly approved.
+1. Review `docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md`.
+2. Implement a file-only local candidate normalizer using fake or local input only, if approved.
+3. Do not fetch OpenRice URLs.
+4. Do not run scraping.
+5. Do not expand the public restaurant database until candidate normalization and manual review workflow are tested locally.

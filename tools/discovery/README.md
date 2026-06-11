@@ -52,3 +52,11 @@ Allowed `reviewStatus` values:
 - It may only be considered for future local and private discovery if explicitly approved.
 - OpenRice alone must not produce `sourceConfidence: high`.
 - OpenRice-derived reviews, ratings, rankings, photos, menu text, promotional copy, smiles, frowns, and raw HTML must be discarded.
+
+## Prototype Plan
+
+See [`../../docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md`](../../docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md).
+
+- The first future implementation should be file-only local normalization.
+- This folder must not contain direct URL scraping unless a later task explicitly approves it.
+- Candidate outputs must remain local and private until manually reviewed.

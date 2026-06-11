@@ -38,6 +38,7 @@ Before making changes, read these files:
 - `docs/DATA_VERIFICATION.md`
 - `docs/DATA_SOURCE_STRATEGY.md`
 - `docs/LOCAL_DISCOVERY_WORKFLOW.md`
+- `docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md`
 - `docs/QA_CHECKLIST.md`
 - `docs/LAUNCH_CHECKLIST.md`
 - `docs/DOMAIN_SETUP.md`
@@ -178,6 +179,12 @@ Do not add OpenRice scraper code unless a later local-only prototype task explic
 - `tools/discovery/manual-review-worksheet.md` must be used before drafting real candidates into `assets/data/restaurants.json`.
 - Do not connect `tools/discovery/` to frontend JavaScript or Cloudflare Pages.
 - Do not add scraper code or dependencies unless a future local-only prototype task explicitly approves them.
+- Read `docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md` before any discovery tool implementation task.
+- Prefer file-only local normalization as the first prototype implementation.
+- Do not implement URL fetching or fetch OpenRice URLs.
+- Any future discovery tool output must remain under `tools/discovery/`.
+- Any future discovery tool must not modify `assets/data/restaurants.json`.
+- Any future discovery tool must not connect to frontend JavaScript or Cloudflare Pages.
 
 ## Restaurant Data Source Strategy Rules
 
@@ -305,7 +312,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7X: Decide whether to test cal65/Open-Rice locally or skip scraper testing
+Task 7Z: Implement file-only local candidate normalizer using fake/local input only
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.

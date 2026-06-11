@@ -90,15 +90,24 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Confirm OpenRice scraper remains production-disallowed
 - [x] Create local-only candidate template
 - [x] Create manual candidate review worksheet
-- [ ] Decide whether to test cal65/Open-Rice locally
+- [x] Decide whether to test cal65/Open-Rice locally - Conditionally deferred; do not run it yet
 
 ## v0.4.5 Candidate Review Templates
 
 - [x] Create tools/discovery/sample-candidates.json
 - [x] Create tools/discovery/manual-review-worksheet.md
 - [x] Update LOCAL_DISCOVERY_WORKFLOW.md with local discovery artifacts
-- [ ] Decide whether to test cal65/Open-Rice locally
+- [x] Decide whether to test cal65/Open-Rice locally - Conditionally deferred; do not run it yet
 - [ ] Create local-only scraper test plan, if approved
+
+## v0.4.6 Local Discovery Prototype Planning
+
+- [x] Create LOCAL_DISCOVERY_PROTOTYPE_PLAN.md
+- [x] Decide not to run cal65/Open-Rice yet
+- [x] Choose file-only local normalization as the first safe implementation direction
+- [ ] Implement file-only local candidate normalizer using fake/local input only
+- [ ] Test candidate normalizer with fake sample input
+- [ ] Review whether saved HTML parsing is needed later
 
 ## v0.5.0 UX Improvements
 
@@ -150,10 +159,11 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Review local-only candidate template.
-2. Review manual candidate review worksheet.
-3. Decide whether to test cal65/Open-Rice locally or skip scraper testing.
-4. Do not run scraping or expand the public database until explicitly approved.
+1. Review local discovery prototype plan.
+2. Implement file-only local candidate normalizer using fake/local input only.
+3. Do not fetch OpenRice URLs.
+4. Do not run scraping.
+5. Do not expand the public restaurant database yet.
 
 ## Short Codex Prompt Pattern
 
