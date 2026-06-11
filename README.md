@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.4.5 - Source metadata activated and local discovery workflow documented**
+**v0.4.6 - Local candidate templates added**
 
 The working static MVP includes filters, decision tools, multilingual core UI, Cloudflare Pages deployment, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -24,6 +24,8 @@ The working static MVP includes filters, decision tools, multilingual core UI, C
 - [Restaurant data schema](docs/DATA_SCHEMA.md)
 - [Restaurant data source strategy](docs/DATA_SOURCE_STRATEGY.md)
 - [Local discovery workflow](docs/LOCAL_DISCOVERY_WORKFLOW.md)
+- [Local discovery folder guide](tools/discovery/README.md)
+- [Manual candidate review worksheet](tools/discovery/manual-review-worksheet.md)
 - [Codex repository instructions](docs/CODEX_INSTRUCTIONS.md)
 
 ## Development Philosophy
@@ -32,7 +34,7 @@ The project stays static-first, beginner-editable, SEO-friendly, low-cost, and m
 
 ## Future MVP Direction
 
-The next milestone is creating a local-only candidate template and manual review worksheet before any database expansion.
+The next milestone is deciding whether to test `cal65/Open-Rice` locally or skip scraper testing.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full version plan.
 
@@ -67,6 +69,8 @@ See:
 Restaurant data is manually curated and now includes verification fields. Entries remain first-pass until manually verified.
 
 All restaurant entries now include source metadata fields for tracking data origin and source confidence.
+
+Local candidate templates are available for private discovery work, but candidates are not automatically imported into the public restaurant database.
 
 Before expanding the database, review the data source strategy to avoid copying third-party reviews, ratings, photos, menu text, or other protected content.
 

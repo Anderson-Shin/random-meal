@@ -88,9 +88,17 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Create LOCAL_DISCOVERY_WORKFLOW.md
 - [x] Document local-only discovery workflow
 - [x] Confirm OpenRice scraper remains production-disallowed
-- [ ] Create local-only candidate template
-- [ ] Create manual candidate review worksheet
+- [x] Create local-only candidate template
+- [x] Create manual candidate review worksheet
 - [ ] Decide whether to test cal65/Open-Rice locally
+
+## v0.4.5 Candidate Review Templates
+
+- [x] Create tools/discovery/sample-candidates.json
+- [x] Create tools/discovery/manual-review-worksheet.md
+- [x] Update LOCAL_DISCOVERY_WORKFLOW.md with local discovery artifacts
+- [ ] Decide whether to test cal65/Open-Rice locally
+- [ ] Create local-only scraper test plan, if approved
 
 ## v0.5.0 UX Improvements
 
@@ -142,10 +150,10 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Review activated source metadata fields.
-2. Create a local-only candidate template and manual review worksheet.
-3. Decide whether to test cal65/Open-Rice locally.
-4. Do not run scraping or expand the public database until the candidate workflow is finalized.
+1. Review local-only candidate template.
+2. Review manual candidate review worksheet.
+3. Decide whether to test cal65/Open-Rice locally or skip scraper testing.
+4. Do not run scraping or expand the public database until explicitly approved.
 
 ## Short Codex Prompt Pattern
 

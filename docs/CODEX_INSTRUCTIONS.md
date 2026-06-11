@@ -169,6 +169,16 @@ New candidate entries from weak discovery sources should default to:
 
 Do not add OpenRice scraper code unless a later local-only prototype task explicitly approves it.
 
+## Local Discovery Artifact Rules
+
+- Candidate files under `tools/discovery/` are local and private artifacts.
+- Candidate files are not production data.
+- Candidate files must not be imported automatically into `assets/data/restaurants.json`.
+- `tools/discovery/sample-candidates.json` must use fake sample data only unless a future task explicitly approves real local candidates.
+- `tools/discovery/manual-review-worksheet.md` must be used before drafting real candidates into `assets/data/restaurants.json`.
+- Do not connect `tools/discovery/` to frontend JavaScript or Cloudflare Pages.
+- Do not add scraper code or dependencies unless a future local-only prototype task explicitly approves them.
+
 ## Restaurant Data Source Strategy Rules
 
 - Read `docs/DATA_SOURCE_STRATEGY.md` before any restaurant data expansion, API, scraping, import, or verification task.
@@ -295,7 +305,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7V-W Bundle: Create local-only candidate template and manual review worksheet
+Task 7X: Decide whether to test cal65/Open-Rice locally or skip scraper testing
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.

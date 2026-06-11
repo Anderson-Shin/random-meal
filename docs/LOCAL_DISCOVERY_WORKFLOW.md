@@ -30,7 +30,7 @@ Discovery does not mean verification. Discovery does not mean public display.
 
 ## Candidate File Format
 
-A future local-only candidate file may use this format. Do not create the actual candidate file until a later task approves it.
+A local-only candidate file may use this format:
 
 ```json
 [
@@ -56,6 +56,11 @@ A future local-only candidate file may use this format. Do not create the actual
   }
 ]
 ```
+
+## Local Discovery Artifacts
+
+- [`tools/discovery/sample-candidates.json`](../tools/discovery/sample-candidates.json) is a format example only and contains fake placeholder data.
+- [`tools/discovery/manual-review-worksheet.md`](../tools/discovery/manual-review-worksheet.md) must be used before any candidate is drafted into `assets/data/restaurants.json`.
 
 ## OpenRice Scraper Handling
 
@@ -134,8 +139,8 @@ New candidate entries from weak discovery sources should usually start with `pub
 
 ## Recommended Future Tasks
 
-1. Decide whether to create a local-only candidate folder.
-2. Decide whether to create sample candidate JSON.
+1. Review the local candidate template.
+2. Review the manual candidate worksheet.
 3. Decide whether to test `cal65/Open-Rice` locally.
-4. Create a manual candidate review template.
-5. Expand the restaurant database district by district.
+4. If approved, create a separate local-only prototype task.
+5. Do not run scraping or expand the public database until explicitly approved.
