@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.4.1 - Codex workflow instructions added**
+**v0.4.3 - Data source strategy added**
 
 The working static MVP includes filters, decision tools, multilingual core UI, Cloudflare Pages deployment, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -22,6 +22,7 @@ The working static MVP includes filters, decision tools, multilingual core UI, C
 - [Product management rules](docs/PM_RULES.md)
 - [Version roadmap](docs/ROADMAP.md)
 - [Restaurant data schema](docs/DATA_SCHEMA.md)
+- [Restaurant data source strategy](docs/DATA_SOURCE_STRATEGY.md)
 - [Codex repository instructions](docs/CODEX_INSTRUCTIONS.md)
 
 ## Development Philosophy
@@ -30,7 +31,7 @@ The project stays static-first, beginner-editable, SEO-friendly, low-cost, and m
 
 ## Future MVP Direction
 
-The next milestone is manually verifying restaurants district by district and correcting or replacing uncertain entries.
+The next milestone is finalizing the restaurant data source strategy and proposed source metadata before resuming district-level verification or database expansion.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full version plan.
 
@@ -63,6 +64,8 @@ See:
 ## Data Verification
 
 Restaurant data is manually curated and now includes verification fields. Entries remain first-pass until manually verified.
+
+Before expanding the database, review the data source strategy to avoid copying third-party reviews, ratings, photos, menu text, or other protected content.
 
 See:
 

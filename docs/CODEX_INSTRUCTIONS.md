@@ -36,6 +36,7 @@ Before making changes, read these files:
 - `docs/ROADMAP.md`
 - `docs/DATA_SCHEMA.md`
 - `docs/DATA_VERIFICATION.md`
+- `docs/DATA_SOURCE_STRATEGY.md`
 - `docs/QA_CHECKLIST.md`
 - `docs/LAUNCH_CHECKLIST.md`
 - `docs/DOMAIN_SETUP.md`
@@ -142,6 +143,16 @@ Do not copy third-party reviews, ratings, photos, menu text, or marketing copy.
 
 Use external sources only for factual confirmation.
 
+## Restaurant Data Source Strategy Rules
+
+- Read `docs/DATA_SOURCE_STRATEGY.md` before any restaurant data expansion, API, scraping, import, or verification task.
+- Do not add OpenRice API wrappers, scraping code, crawler code, or external data dependencies unless explicitly approved in a later task.
+- Do not copy reviews, ratings, rankings, photos, menu text, or promotional copy from OpenRice or any third-party platform.
+- Use third-party sources for factual confirmation only.
+- Keep all public-facing descriptions original.
+- Treat unofficial OpenRice API repositories as risky and not production-approved.
+- If a future task proposes data import, keep it local and private first. Do not integrate it into Cloudflare Pages or frontend code.
+
 ## Data Verification Workflow
 
 Verify restaurants district by district:
@@ -247,7 +258,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7A: Manually verify Quarry Bay restaurants
+Task 7R follow-up: Decide data source expansion workflow and proposed source metadata fields
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.

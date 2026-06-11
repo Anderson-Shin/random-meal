@@ -63,6 +63,21 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Document repository-level Codex workflow rules
 - [x] Document short future Codex prompt pattern
 
+## v0.4.2 Verification Workspace
+
+- [x] Create Quarry Bay verification worksheet
+- [ ] Complete Quarry Bay manual verification
+- [ ] Apply Quarry Bay verification results to restaurants.json
+
+## v0.4.3 Data Source Strategy
+
+- [x] Create DATA_SOURCE_STRATEGY.md
+- [x] Update CODEX_INSTRUCTIONS.md with data source strategy rules
+- [x] Pause branch-level manual verification until data source strategy is finalized
+- [ ] Decide whether unofficial OpenRice API repositories should be avoided or tested locally only
+- [ ] Design expanded restaurant source metadata fields
+- [ ] Create safe restaurant data expansion workflow
+
 ## v0.5.0 UX Improvements
 
 - [ ] Improve roulette animation
@@ -113,11 +128,10 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Manually verify Quarry Bay restaurants.
-2. Manually verify Central restaurants.
-3. Manually verify Kwun Tong restaurants.
-4. Replace or update any uncertain entries.
-5. Then prepare legal pages for AdSense readiness.
+1. Review DATA_SOURCE_STRATEGY.md.
+2. Decide whether unofficial OpenRice API repositories are allowed for local research only or avoided entirely.
+3. Design expanded source metadata fields.
+4. Then decide whether to resume manual verification or build a local-only import prototype.
 
 ## Short Codex Prompt Pattern
 
