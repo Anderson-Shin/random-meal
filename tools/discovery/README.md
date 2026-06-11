@@ -24,7 +24,13 @@ This folder is for local and private restaurant candidate discovery artifacts.
 ## Files
 
 - `sample-candidates.json` - Example candidate format with fake placeholder data only.
+- `raw-candidates.example.json` - Fake raw input containing safe and unsafe test fields.
+- `local-candidates.example.json` - Generated normalized fake candidate output.
 - `manual-review-worksheet.md` - Manual review checklist for candidates before database entry.
+- `local_tools/normalize_candidates.py` - File-only local candidate normalizer.
+- `local_tools/README.md` - Local tool usage and restrictions.
+
+All files in this folder are local-only artifacts. Example files contain fake data and are not production data.
 
 Allowed `reviewStatus` values:
 
@@ -57,6 +63,6 @@ Allowed `reviewStatus` values:
 
 See [`../../docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md`](../../docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md).
 
-- The first future implementation should be file-only local normalization.
+- The currently approved implementation is file-only local normalization.
 - This folder must not contain direct URL scraping unless a later task explicitly approves it.
 - Candidate outputs must remain local and private until manually reviewed.

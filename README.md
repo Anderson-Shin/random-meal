@@ -4,7 +4,7 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.4.7 - Local discovery prototype plan documented**
+**v0.4.8 - File-only local candidate normalizer added**
 
 The working static MVP includes filters, decision tools, multilingual core UI, Cloudflare Pages deployment, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
@@ -26,6 +26,7 @@ The working static MVP includes filters, decision tools, multilingual core UI, C
 - [Local discovery workflow](docs/LOCAL_DISCOVERY_WORKFLOW.md)
 - [Local discovery prototype plan](docs/LOCAL_DISCOVERY_PROTOTYPE_PLAN.md)
 - [Local discovery folder guide](tools/discovery/README.md)
+- [Local discovery tools](tools/discovery/local_tools/README.md)
 - [Manual candidate review worksheet](tools/discovery/manual-review-worksheet.md)
 - [Codex repository instructions](docs/CODEX_INSTRUCTIONS.md)
 
@@ -35,7 +36,7 @@ The project stays static-first, beginner-editable, SEO-friendly, low-cost, and m
 
 ## Future MVP Direction
 
-The next milestone is implementing a file-only local candidate normalizer using fake/local input only. Direct OpenRice URL fetching is not approved.
+The next milestone is reviewing the normalized fake candidate output and deciding whether to allow real local candidate input. Direct OpenRice URL fetching is still not approved.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full version plan.
 

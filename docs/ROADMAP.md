@@ -105,9 +105,19 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Create LOCAL_DISCOVERY_PROTOTYPE_PLAN.md
 - [x] Decide not to run cal65/Open-Rice yet
 - [x] Choose file-only local normalization as the first safe implementation direction
-- [ ] Implement file-only local candidate normalizer using fake/local input only
-- [ ] Test candidate normalizer with fake sample input
+- [x] Implement file-only local candidate normalizer using fake/local input only
+- [x] Test candidate normalizer with fake sample input
 - [ ] Review whether saved HTML parsing is needed later
+
+## v0.4.7 File-Only Candidate Normalizer
+
+- [x] Create raw-candidates.example.json
+- [x] Create normalize_candidates.py
+- [x] Generate local-candidates.example.json from fake input
+- [x] Confirm no URL fetching or scraping
+- [x] Confirm restaurants.json remains unchanged
+- [ ] Review normalized fake candidate output
+- [ ] Decide whether to allow real local candidate input
 
 ## v0.5.0 UX Improvements
 
@@ -159,8 +169,8 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Review local discovery prototype plan.
-2. Implement file-only local candidate normalizer using fake/local input only.
+1. Review normalized fake candidate output.
+2. Decide whether to allow real local candidate input.
 3. Do not fetch OpenRice URLs.
 4. Do not run scraping.
 5. Do not expand the public restaurant database yet.

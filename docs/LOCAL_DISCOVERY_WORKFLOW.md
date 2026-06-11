@@ -60,7 +60,12 @@ A local-only candidate file may use this format:
 ## Local Discovery Artifacts
 
 - [`tools/discovery/sample-candidates.json`](../tools/discovery/sample-candidates.json) is a format example only and contains fake placeholder data.
+- [`tools/discovery/raw-candidates.example.json`](../tools/discovery/raw-candidates.example.json) contains fake raw input with unsafe test fields.
+- [`tools/discovery/local_tools/normalize_candidates.py`](../tools/discovery/local_tools/normalize_candidates.py) performs file-only local normalization.
+- [`tools/discovery/local-candidates.example.json`](../tools/discovery/local-candidates.example.json) is generated normalized fake output.
 - [`tools/discovery/manual-review-worksheet.md`](../tools/discovery/manual-review-worksheet.md) must be used before any candidate is drafted into `assets/data/restaurants.json`.
+
+Normalizer output is still not public database data and must go through manual review before any candidate is drafted into `assets/data/restaurants.json`.
 
 ## OpenRice Scraper Handling
 

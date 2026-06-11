@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Example Restaurant A",
+    "area": "Quarry Bay",
+    "district": "Eastern Hong Kong",
+    "address": "Example building or neighborhood",
+    "cuisine": "Japanese",
+    "budget": "$$",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
+    "speed": "quick",
+    "sourceType": "openrice_listing",
+    "sourceUrl": "https://example.com/not-a-real-openrice-source",
+    "price": "$101-200",
+    "smiles": 123,
+    "frowns": 4,
+    "ratings": 4.2,
+    "reviews": [
+      "Fake review text that must not be retained."
+    ],
+    "rankings": "#1 fake ranking",
+    "photos": [
+      "https://example.com/fake-photo.jpg"
+    ],
+    "menuText": "Fake copied menu text",
+    "promotionalCopy": "Fake promotional copy",
+    "rawHtml": "<div>fake html</div>"
+  },
+  {
+    "name": "Example Restaurant B",
+    "area": "Central",
+    "district": "Central and Western Hong Kong",
+    "address": "Example mall or neighborhood",
+    "cuisine": "Chinese",
+    "budget": "$$$",
+    "mealTypes": [
+      "lunch"
+    ],
+    "situations": [
+      "team lunch"
+    ],
+    "speed": "normal",
+    "sourceType": "mall_directory",
+    "sourceUrl": "https://example.com/fake-mall-directory",
+    "ratings": 4.5,
+    "photos": [
+      "https://example.com/fake-photo-b.jpg"
+    ],
+    "menuText": "Fake copied menu text B"
+  }
+]

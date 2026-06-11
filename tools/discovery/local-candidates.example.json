@@ -1,0 +1,71 @@
+[
+  {
+    "candidateId": "sample-quarry-bay-001",
+    "candidateName": "Example Restaurant A",
+    "candidateArea": "Quarry Bay",
+    "candidateDistrict": "Eastern Hong Kong",
+    "candidateAddressHint": "Example building or neighborhood",
+    "candidateCuisineHint": "Japanese",
+    "candidateBudgetHint": "$$",
+    "candidateMealTypeHints": [
+      "lunch",
+      "dinner"
+    ],
+    "candidateSituationHints": [
+      "solo",
+      "friends"
+    ],
+    "candidateSpeedHint": "quick",
+    "discoverySource": "openrice_listing",
+    "sourceUrl": "https://example.com/not-a-real-openrice-source",
+    "sourceUsage": "discovery",
+    "sourceConfidence": "low",
+    "dataOrigin": "discovery_source_only",
+    "discardedFields": [
+      "price",
+      "smiles",
+      "frowns",
+      "ratings",
+      "reviews",
+      "rankings",
+      "photos",
+      "menuText",
+      "promotionalCopy",
+      "rawHtml"
+    ],
+    "readyForPublicDb": false,
+    "reviewStatus": "not_reviewed",
+    "nextAction": "Cross-check with official website, mall directory, building directory, or another stronger source.",
+    "notes": "Local candidate only. Do not import directly into restaurants.json."
+  },
+  {
+    "candidateId": "sample-central-001",
+    "candidateName": "Example Restaurant B",
+    "candidateArea": "Central",
+    "candidateDistrict": "Central and Western Hong Kong",
+    "candidateAddressHint": "Example mall or neighborhood",
+    "candidateCuisineHint": "Chinese",
+    "candidateBudgetHint": "$$$",
+    "candidateMealTypeHints": [
+      "lunch"
+    ],
+    "candidateSituationHints": [
+      "team lunch"
+    ],
+    "candidateSpeedHint": "normal",
+    "discoverySource": "mall_directory",
+    "sourceUrl": "https://example.com/fake-mall-directory",
+    "sourceUsage": "discovery",
+    "sourceConfidence": "low",
+    "dataOrigin": "discovery_source_only",
+    "discardedFields": [
+      "ratings",
+      "photos",
+      "menuText"
+    ],
+    "readyForPublicDb": false,
+    "reviewStatus": "not_reviewed",
+    "nextAction": "Cross-check with official website, mall directory, building directory, or another stronger source.",
+    "notes": "Local candidate only. Do not import directly into restaurants.json."
+  }
+]

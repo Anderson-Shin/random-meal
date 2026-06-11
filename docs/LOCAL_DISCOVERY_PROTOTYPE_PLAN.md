@@ -140,21 +140,19 @@ tools/discovery/
   prototype-plan.md
 ```
 
-If a later implementation task is approved, a script may be placed under:
+The approved Phase 1 implementation script is placed under:
 
 ```text
 tools/discovery/local_tools/
 ```
 
-Possible future script name:
+Current script name:
 
 ```text
 normalize_candidates.py
 ```
 
-Do not create the folder or script in this task.
-
-The first implementation should prefer local file input:
+The Phase 1 implementation uses local file input:
 
 ```text
 python tools/discovery/local_tools/normalize_candidates.py --input tools/discovery/raw-candidates.example.json --output tools/discovery/local-candidates.example.json
@@ -178,6 +176,16 @@ Fetching URLs directly should be avoided unless explicitly approved later. If ev
 
 Phase 3 is not approved.
 
+## Phase 1 Implementation
+
+Phase 1 file-only local normalization is now implemented with:
+
+- [`tools/discovery/local_tools/normalize_candidates.py`](../tools/discovery/local_tools/normalize_candidates.py)
+- [`tools/discovery/raw-candidates.example.json`](../tools/discovery/raw-candidates.example.json)
+- [`tools/discovery/local-candidates.example.json`](../tools/discovery/local-candidates.example.json)
+
+This implementation is file-only. It makes no network requests, does not fetch OpenRice URLs, does not scrape, and does not update `assets/data/restaurants.json`. It only demonstrates safe candidate normalization with fake or local input.
+
 ## Stop Conditions
 
 Stop or reject the future prototype if:
@@ -194,7 +202,7 @@ Stop or reject the future prototype if:
 ## Recommended Next Task
 
 ```text
-Task 7Z: Implement file-only local candidate normalizer using fake/local input only
+Task 8A: Review normalized fake candidate output and decide whether to allow real local candidate input
 ```
 
-Task 7Z must not fetch OpenRice URLs or scrape. It should only normalize local fake or sample candidate input into the approved candidate format.
+Any future task must continue to prohibit OpenRice URL fetching and scraping unless separately approved.

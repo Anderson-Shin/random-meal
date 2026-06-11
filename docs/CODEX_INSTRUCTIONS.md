@@ -185,6 +185,12 @@ Do not add OpenRice scraper code unless a later local-only prototype task explic
 - Any future discovery tool output must remain under `tools/discovery/`.
 - Any future discovery tool must not modify `assets/data/restaurants.json`.
 - Any future discovery tool must not connect to frontend JavaScript or Cloudflare Pages.
+- The only currently approved discovery implementation is file-only local normalization.
+- `tools/discovery/local_tools/normalize_candidates.py` must not be changed to fetch URLs unless a later task explicitly approves it.
+- The normalizer must not import network or scraping libraries.
+- The normalizer must not read or write `assets/data/restaurants.json`.
+- Generated candidate outputs must remain under `tools/discovery/`.
+- Generated candidate outputs must go through `tools/discovery/manual-review-worksheet.md` before any database draft.
 
 ## Restaurant Data Source Strategy Rules
 
@@ -312,7 +318,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7Z: Implement file-only local candidate normalizer using fake/local input only
+Task 8A: Review normalized fake candidate output and decide whether to allow real local candidate input
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.
