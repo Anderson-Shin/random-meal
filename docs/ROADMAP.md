@@ -18,7 +18,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Create CSS
 - [x] Create JavaScript structure
 - [x] Create restaurants.json
-- [ ] Add 45 restaurant entries
+- [x] Add 45 restaurant entries
 - [x] Add filters
 - [x] Add random picker
 - [x] Add roulette
@@ -89,7 +89,7 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Define the v0.2.0 static MVP skeleton and file structure.
-2. Create the semantic homepage shell without restaurant data.
-3. Establish shared CSS and Vanilla JavaScript structure.
-4. Create and validate the first manually curated restaurant dataset.
+1. Manually verify restaurant names and current availability.
+2. Create SEO pages for Quarry Bay, Central, and Kwun Tong.
+3. Create `sitemap.xml` and `robots.txt`.
+4. Add internal links between the homepage and district pages.

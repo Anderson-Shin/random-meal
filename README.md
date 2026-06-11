@@ -4,9 +4,9 @@ A multilingual, static-first Hong Kong restaurant decision website that helps pe
 
 ## Current Status
 
-**v0.2.0 - Static MVP in progress**
+**v0.2.0 - Static MVP complete**
 
-The first working static website skeleton is available with filters, decision tools, multilingual core UI, and nine placeholder restaurant entries. The full 45-entry dataset is not complete yet.
+The working static MVP includes filters, decision tools, multilingual core UI, and 45 first-pass manually curated restaurant entries across Quarry Bay, Central, and Kwun Tong.
 
 ## Tech Stack
 
@@ -29,6 +29,6 @@ The project stays static-first, beginner-editable, SEO-friendly, low-cost, and m
 
 ## Future MVP Direction
 
-The next milestone is replacing placeholder entries with a verified, manually curated 45-restaurant dataset before creating district SEO pages.
+The next milestone is creating district SEO pages, `sitemap.xml`, `robots.txt`, and internal links while keeping manual data-verification work visible in the roadmap.
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the full version plan.
