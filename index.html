@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Should I Eat HK? | Hong Kong Restaurant Picker</title>
+    <meta name="description" content="Find lunch and dinner ideas in Hong Kong with a random restaurant picker and roulette tool.">
+    <meta property="og:title" content="What Should I Eat HK? | Hong Kong Restaurant Picker">
+    <meta property="og:description" content="Find lunch and dinner ideas in Hong Kong with a random restaurant picker and roulette tool.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_HK">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/data-loader.js" defer></script>
+    <script src="assets/js/roulette.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">What Should I Eat HK?</a>
+      <label class="language-control" for="language">
+        <span class="visually-hidden">Language</span>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="zhHant">繁體中文</option>
+          <option value="zhHans">简体中文</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Hong Kong restaurant picker</p>
+        <h1 id="hero-title" data-i18n="heroTitle">Lunch decision, sorted.</h1>
+        <p data-i18n="heroSubtitle">Filter a few options, pick at random, or let the roulette decide.</p>
+        <a class="button button-primary" href="#filters" data-i18n="startButton">Find food</a>
+      </section>
+
+      <div class="ad-placeholder" aria-label="Advertisement placeholder">Ad space</div>
+
+      <section id="filters" class="section-shell" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="stepOne">Step 1</p>
+          <h2 id="filters-title" data-i18n="filtersHeading">Narrow it down</h2>
+        </div>
+        <form class="filter-grid" id="filter-form">
+          <label><span data-i18n="districtLabel">District</span><select id="district-filter"></select></label>
+          <label><span data-i18n="mealLabel">Meal</span><select id="meal-filter"></select></label>
+          <label><span data-i18n="cuisineLabel">Cuisine</span><select id="cuisine-filter"></select></label>
+          <label><span data-i18n="budgetLabel">Budget</span><select id="budget-filter"></select></label>
+          <label><span data-i18n="situationLabel">Situation</span><select id="situation-filter"></select></label>
+          <label><span data-i18n="speedLabel">Speed</span><select id="speed-filter"></select></label>
+          <button class="button button-secondary" type="reset" data-i18n="resetButton">Reset filters</button>
+        </form>
+      </section>
+
+      <section class="section-shell" aria-labelledby="results-title">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow" data-i18n="matchesLabel">Current matches</p>
+            <h2 id="results-title" data-i18n="resultsHeading">Restaurant ideas</h2>
+          </div>
+          <span id="result-count" class="result-count" aria-live="polite"></span>
+        </div>
+        <div id="restaurant-results" class="restaurant-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="decision-grid" aria-label="Decision tools">
+        <article class="decision-card">
+          <p class="eyebrow" data-i18n="quickChoiceLabel">Quick choice</p>
+          <h2 data-i18n="randomHeading">Pick one for me</h2>
+          <p data-i18n="randomText">One click, one answer from your current matches.</p>
+          <button id="random-button" class="button button-primary" type="button" data-i18n="pickButton">Pick For Me</button>
+          <div id="random-result" class="decision-result" aria-live="polite"></div>
+        </article>
+
+        <article class="decision-card roulette-card">
+          <p class="eyebrow" data-i18n="makeItFunLabel">Make it fun</p>
+          <h2 data-i18n="rouletteHeading">Spin the lunch roulette</h2>
+          <p data-i18n="rouletteText">Watch the options shuffle before the winner lands.</p>
+          <button id="roulette-button" class="button button-primary" type="button" data-i18n="spinButton">Spin Roulette</button>
+          <div id="roulette-result" class="decision-result roulette-result" aria-live="polite"></div>
+        </article>
+      </section>
+
+      <section class="section-shell" aria-labelledby="districts-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="exploreLabel">Explore</p>
+          <h2 id="districts-title" data-i18n="districtsHeading">Popular districts</h2>
+        </div>
+        <div class="district-grid">
+          <a href="#" class="district-card"><span>Quarry Bay</span><small data-i18n="districtComingSoon">District page coming soon</small></a>
+          <a href="#" class="district-card"><span>Central</span><small data-i18n="districtComingSoon">District page coming soon</small></a>
+          <a href="#" class="district-card"><span>Kwun Tong</span><small data-i18n="districtComingSoon">District page coming soon</small></a>
+        </div>
+      </section>
+
+      <div class="ad-placeholder" aria-label="Advertisement placeholder">Ad space</div>
+    </main>
+
+    <footer>
+      <strong>What Should I Eat HK?</strong>
+      <p data-i18n="footerText">A simple, manually curated way to decide what to eat in Hong Kong.</p>
+    </footer>
+  </body>
+</html>

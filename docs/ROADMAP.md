@@ -14,15 +14,15 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## v0.2.0 Static MVP
 
-- [ ] Create index.html
-- [ ] Create CSS
-- [ ] Create JavaScript structure
-- [ ] Create restaurants.json
+- [x] Create index.html
+- [x] Create CSS
+- [x] Create JavaScript structure
+- [x] Create restaurants.json
 - [ ] Add 45 restaurant entries
-- [ ] Add filters
-- [ ] Add random picker
-- [ ] Add roulette
-- [ ] Add multilingual UI
+- [x] Add filters
+- [x] Add random picker
+- [x] Add roulette
+- [x] Add multilingual UI
 
 ## v0.3.0 SEO Pages
 
