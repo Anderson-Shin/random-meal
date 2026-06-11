@@ -56,6 +56,13 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [ ] Add more tags
 - [ ] Add more districts
 
+## v0.4.1 Codex Workflow
+
+- [x] Create CODEX_INSTRUCTIONS.md
+- [x] Link CODEX_INSTRUCTIONS.md from README.md
+- [x] Document repository-level Codex workflow rules
+- [x] Document short future Codex prompt pattern
+
 ## v0.5.0 UX Improvements
 
 - [ ] Improve roulette animation
@@ -111,3 +118,21 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 3. Manually verify Kwun Tong restaurants.
 4. Replace or update any uncertain entries.
 5. Then prepare legal pages for AdSense readiness.
+
+## Short Codex Prompt Pattern
+
+For future tasks, use a short prompt like:
+
+```markdown
+Read docs/CODEX_INSTRUCTIONS.md and docs/ROADMAP.md.
+
+Implement the requested task only.
+
+Follow the project rules strictly.
+
+After finishing:
+1. Update docs/ROADMAP.md if task status changes.
+2. Update README.md if project status or documentation links change.
+3. Summarize files changed.
+4. Mention anything requiring manual verification.
+```
