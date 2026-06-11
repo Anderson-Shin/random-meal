@@ -37,6 +37,7 @@ Before making changes, read these files:
 - `docs/DATA_SCHEMA.md`
 - `docs/DATA_VERIFICATION.md`
 - `docs/DATA_SOURCE_STRATEGY.md`
+- `docs/LOCAL_DISCOVERY_WORKFLOW.md`
 - `docs/QA_CHECKLIST.md`
 - `docs/LAUNCH_CHECKLIST.md`
 - `docs/DOMAIN_SETUP.md`
@@ -49,6 +50,8 @@ For restaurant data tasks, also inspect:
 
 - `assets/data/restaurants.json`
 - `assets/js/app.js`
+- `docs/DATA_SOURCE_STRATEGY.md`
+- `docs/LOCAL_DISCOVERY_WORKFLOW.md`
 
 ## Non-Negotiable Project Rules
 
@@ -124,6 +127,14 @@ Each restaurant must include verification metadata:
 - `publicDisplay`
 - `reviewNotes`
 
+Each restaurant must also include source metadata:
+
+- `sourceLinks`
+- `sourceConfidence`
+- `dataOrigin`
+
+Do not remove these fields. Source metadata does not mean the restaurant is verified. Do not set `sourceConfidence: high` based only on OpenRice.
+
 Allowed `verificationStatus` values:
 
 - `unverified`
@@ -142,6 +153,21 @@ restaurant.publicDisplay === false
 Do not copy third-party reviews, ratings, photos, menu text, or marketing copy.
 
 Use external sources only for factual confirmation.
+
+New candidate entries from weak discovery sources should default to:
+
+```json
+{
+  "sourceConfidence": "low",
+  "dataOrigin": "discovery_source_only",
+  "verificationStatus": "unverified",
+  "verified": false,
+  "needsReview": true,
+  "publicDisplay": false
+}
+```
+
+Do not add OpenRice scraper code unless a later local-only prototype task explicitly approves it.
 
 ## Restaurant Data Source Strategy Rules
 
@@ -269,7 +295,7 @@ When finished, summarize:
 Proceed with:
 
 ```text
-Task 7T: Decide whether to add proposed source metadata fields to restaurants.json
+Task 7V-W Bundle: Create local-only candidate template and manual review worksheet
 ```
 
 Do not mark restaurants as `verified` unless factual verification was actually performed.

@@ -78,8 +78,19 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Classify cal65/Open-Rice as an unofficial scraper, not a production API
 - [x] Document field-level treatment for OpenRice scraper output
 - [x] Design proposed restaurant source metadata fields
-- [ ] Decide whether to add proposed source metadata fields to restaurants.json
+- [x] Decide whether to add proposed source metadata fields to restaurants.json
 - [ ] Create local-only data discovery prototype, if approved
+
+## v0.4.4 Source Metadata Activation and Local Discovery Workflow
+
+- [x] Promote source metadata fields to active schema
+- [x] Add default source metadata to existing restaurant entries
+- [x] Create LOCAL_DISCOVERY_WORKFLOW.md
+- [x] Document local-only discovery workflow
+- [x] Confirm OpenRice scraper remains production-disallowed
+- [ ] Create local-only candidate template
+- [ ] Create manual candidate review worksheet
+- [ ] Decide whether to test cal65/Open-Rice locally
 
 ## v0.5.0 UX Improvements
 
@@ -131,11 +142,10 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 
 ## Next Actions
 
-1. Review proposed source metadata fields.
-2. Decide whether to add source metadata fields to restaurants.json.
-3. If approved, update DATA_SCHEMA.md from proposed fields to active fields.
-4. Only then consider a local-only discovery prototype.
-5. Do not resume mass data expansion until source metadata is finalized.
+1. Review activated source metadata fields.
+2. Create a local-only candidate template and manual review worksheet.
+3. Decide whether to test cal65/Open-Rice locally.
+4. Do not run scraping or expand the public database until the candidate workflow is finalized.
 
 ## Short Codex Prompt Pattern
 

@@ -162,42 +162,23 @@ A restaurant should only be displayed if it has enough factual confidence and do
 
 Use `publicDisplay: false` for uncertain or unsuitable entries.
 
-## Proposed Future Source Fields
+## Active Source Metadata Fields
 
-The following fields are proposed for a future schema task:
+`sourceLinks`, `sourceConfidence`, and `dataOrigin` are active fields in `assets/data/restaurants.json`.
+
+Existing first-pass entries use:
 
 ```json
 {
-  "sourceLinks": [
-    {
-      "type": "official_website",
-      "url": "https://example.com",
-      "checkedAt": "2026-06-11",
-      "usage": "verification",
-      "note": "Official branch page confirms district and current listing."
-    }
-  ],
-  "sourceConfidence": "medium",
+  "sourceLinks": [],
+  "sourceConfidence": "low",
   "dataOrigin": "manual_curation"
 }
 ```
 
-Allowed `sourceConfidence` values:
+Empty `sourceLinks` means the entry is not yet source-documented. Source metadata does not equal verification.
 
-- `low`
-- `medium`
-- `high`
-
-Allowed `dataOrigin` values:
-
-- `manual_curation`
-- `official_source`
-- `mall_directory`
-- `user_suggestion`
-- `local_research`
-- `discovery_source_only`
-
-These are proposed fields only. Do not add them to `assets/data/restaurants.json` in this task.
+See also: [Local Discovery Workflow](LOCAL_DISCOVERY_WORKFLOW.md)
 
 ## Review and Rating Policy
 
@@ -233,8 +214,7 @@ These are proposed fields only. Do not add them to `assets/data/restaurants.json
 
 ## Recommended Next Steps
 
-1. Review the proposed source metadata fields.
-2. Decide whether to add the proposed fields to `assets/data/restaurants.json`.
-3. If approved, promote the proposed fields to active schema fields.
-4. Only then consider a separately approved local-only discovery prototype.
-5. Do not resume mass data expansion until source metadata is finalized.
+1. Review the activated source metadata fields.
+2. Create a local-only candidate template and manual review worksheet.
+3. Decide whether to test `cal65/Open-Rice` locally.
+4. Do not run scraping or expand the public database until the candidate workflow is finalized.

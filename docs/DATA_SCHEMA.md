@@ -34,7 +34,10 @@ The file contains a JSON array of restaurant objects.
   "lastChecked": null,
   "needsReview": true,
   "publicDisplay": true,
-  "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch."
+  "reviewNotes": "First-pass MVP entry. Verify current operation, district accuracy, cuisine category, and suitability before public launch.",
+  "sourceLinks": [],
+  "sourceConfidence": "low",
+  "dataOrigin": "manual_curation"
 }
 ```
 
@@ -71,6 +74,78 @@ The file contains a JSON array of restaurant objects.
 | `publicDisplay` | boolean | Whether the entry may appear in public recommendations. Entries with `false` are hidden by the homepage app. |
 | `reviewNotes` | string | Short note explaining the verification result or remaining work. |
 
+## Source Metadata Fields
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `sourceLinks` | array | Internal list of source references used for discovery, verification, or cross-checking. An empty array is allowed for first-pass manually curated entries. |
+| `sourceConfidence` | string | Current confidence level of the entry's source support. Allowed values: `low`, `medium`, or `high`. |
+| `dataOrigin` | string | How the entry originally entered the database. Allowed values: `manual_curation`, `official_source`, `mall_directory`, `user_suggestion`, `local_research`, or `discovery_source_only`. |
+
+Each `sourceLinks` object uses this format:
+
+```json
+{
+  "type": "official_website",
+  "url": "https://example.com",
+  "checkedAt": "2026-06-11",
+  "usage": "verification",
+  "note": "Official source confirms location and current listing."
+}
+```
+
+Allowed `sourceLinks[].type` values:
+
+- `official_website`
+- `official_social`
+- `mall_directory`
+- `building_directory`
+- `google_business_profile`
+- `openrice_listing`
+- `local_research`
+- `user_suggestion`
+
+Allowed `sourceLinks[].usage` values:
+
+- `discovery`
+- `verification`
+- `cross_check`
+- `do_not_publish`
+
+Allowed `sourceConfidence` values:
+
+- `low`
+- `medium`
+- `high`
+
+Allowed `dataOrigin` values:
+
+- `manual_curation`
+- `official_source`
+- `mall_directory`
+- `user_suggestion`
+- `local_research`
+- `discovery_source_only`
+
+Default source metadata for first-pass entries:
+
+```json
+{
+  "sourceLinks": [],
+  "sourceConfidence": "low",
+  "dataOrigin": "manual_curation"
+}
+```
+
+Rules:
+
+- `sourceConfidence: high` requires stronger confirmation than OpenRice alone.
+- `openrice_listing` may only be used as an internal source reference.
+- OpenRice-derived reviews, ratings, rankings, photos, menu text, promotional copy, smiles, frowns, and raw HTML must never be stored.
+- Empty `sourceLinks` means the entry is not yet source-documented.
+- Source metadata does not mean the restaurant is verified.
+- Verification still depends on `verificationStatus`, `verified`, `lastChecked`, `needsReview`, and `reviewNotes`.
+
 New first-pass entries should use:
 
 ```json
@@ -96,66 +171,6 @@ After a successful manual check, use:
   "reviewNotes": "Verified restaurant name, district, cuisine, and general suitability."
 }
 ```
-
-## Proposed Future Source Metadata Fields
-
-The following fields are proposed for a future schema task:
-
-```json
-{
-  "sourceLinks": [
-    {
-      "type": "official_website",
-      "url": "https://example.com",
-      "checkedAt": "2026-06-11",
-      "usage": "verification",
-      "note": "Official source confirms location and current listing."
-    }
-  ],
-  "sourceConfidence": "medium",
-  "dataOrigin": "manual_curation"
-}
-```
-
-Proposed `sourceLinks[].type` values:
-
-- `official_website`
-- `official_social`
-- `mall_directory`
-- `building_directory`
-- `google_business_profile`
-- `openrice_listing`
-- `local_research`
-- `user_suggestion`
-
-Proposed `sourceLinks[].usage` values:
-
-- `discovery`
-- `verification`
-- `cross_check`
-- `do_not_publish`
-
-Proposed `sourceConfidence` values:
-
-- `low`
-- `medium`
-- `high`
-
-Proposed `dataOrigin` values:
-
-- `manual_curation`
-- `official_source`
-- `mall_directory`
-- `user_suggestion`
-- `local_research`
-- `discovery_source_only`
-
-Rules:
-
-- These fields are proposed only and must not be added to `assets/data/restaurants.json` in this task.
-- OpenRice source links may be stored only as internal references.
-- OpenRice-derived review, rating, ranking, photo, menu, or promotional data must not be stored.
-- `sourceConfidence: high` requires stronger confirmation than OpenRice alone.
 
 ## Data Rules
 
