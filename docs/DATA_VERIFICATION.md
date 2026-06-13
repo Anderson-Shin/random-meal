@@ -114,3 +114,5 @@ Before public launch:
 - Every publicly displayed entry should be suitable for recommendation
 
 Hidden OpenRice Apify candidates should also be reviewed with the [OpenRice candidate review checklist](../tools/openrice_apify/review-checklist.md) before any manual change to `publicDisplay`.
+
+OpenRice Apify candidates may be approved only through the documented manual review template workflow. Approval remains dry-run unless the developer explicitly applies complete reviewed records with `--write`.

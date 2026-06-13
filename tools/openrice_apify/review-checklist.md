@@ -51,3 +51,13 @@ After review, manually update the appropriate fields:
 Reviewer notes:
 
 Source and cross-check notes:
+
+## Apply A Reviewed Decision
+
+After completing this checklist, generate and fill out:
+
+```text
+tools/openrice_apify/processed/openrice_review_template.json
+```
+
+Then dry-run `apply_review_updates.py` before explicitly using `--write`. The checklist itself does not publish anything, and incomplete or non-approved review records remain hidden.

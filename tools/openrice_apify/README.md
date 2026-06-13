@@ -64,6 +64,7 @@ The normalizer accepts input only from `raw/`, and normalization/export output p
 ```text
 tools/openrice_apify/
   README.md
+  review-checklist.md
   requirements.txt
   .env.example
   config/
@@ -79,6 +80,8 @@ tools/openrice_apify/
     export_candidates.py
     merge_candidates.py
     list_hidden_candidates.py
+    generate_review_template.py
+    apply_review_updates.py
 ```
 
 ## Input
@@ -177,6 +180,43 @@ python tools/openrice_apify/scripts/list_hidden_candidates.py --format json
 An alternative restaurant database path can be supplied with `--target`. The script is read-only and never modifies files. Candidates remain hidden until they are manually reviewed and edited.
 
 Use [review-checklist.md](review-checklist.md) before changing any candidate's `publicDisplay` value. Public display must only be enabled after a manual factual and content-safety review.
+
+## Manual Approval Workflow
+
+Generate a review template from hidden OpenRice Apify candidates:
+
+```bash
+python tools/openrice_apify/scripts/generate_review_template.py
+```
+
+Manually edit:
+
+```text
+tools/openrice_apify/processed/openrice_review_template.json
+```
+
+Fill in original descriptions and recommendations, final cuisine, budget, meal types, situations, speed, tags, reviewer, review date, and review notes. Only after completing manual review, set:
+
+```json
+{
+  "reviewDecision": "approved",
+  "approvedForPublicDisplay": true
+}
+```
+
+Preview valid approval updates without modifying the database:
+
+```bash
+python tools/openrice_apify/scripts/apply_review_updates.py
+```
+
+Explicitly write complete approved updates:
+
+```bash
+python tools/openrice_apify/scripts/apply_review_updates.py --write
+```
+
+The apply script is dry-run by default. It rejects incomplete approvals, skips pending or rejected records, updates only OpenRice Apify entries, and does not remove their source trace fields. It never modifies non-OpenRice manual entries. Public descriptions must be original.
 
 ## Setup
 
