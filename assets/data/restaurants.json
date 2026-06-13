@@ -1714,5 +1714,333 @@
     "sourceLinks": [],
     "sourceConfidence": "low",
     "dataOrigin": "manual_curation"
+  },
+  {
+    "id": "openrice-1125699",
+    "name": "Fugazzi Pizzeria Napoletana",
+    "area": "九龍城",
+    "district": "九龍城",
+    "cuisine": "Italian",
+    "budget": "$$",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "friends",
+      "date"
+    ],
+    "speed": "normal",
+    "tags": [
+      "italian",
+      "pizza"
+    ],
+    "description_en": "",
+    "description_zhHant": "",
+    "description_zhHans": "",
+    "recommendedFor_en": "",
+    "recommendedFor_zhHant": "",
+    "recommendedFor_zhHans": "",
+    "sourceNote": "Imported from local OpenRice Apify candidate pipeline. Requires review before public display.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": false,
+    "reviewNotes": "Transformed OpenRice Apify candidate. Requires manual review before public display.",
+    "sourceLinks": [],
+    "sourceConfidence": "low",
+    "dataOrigin": "openrice_apify",
+    "sourceRestaurantId": 1125699,
+    "sourceName": "openrice_apify",
+    "address": "啟德協調道10號天璽天商場2樓202號舖",
+    "latitude": 22.3319954,
+    "longitude": 114.1994832,
+    "priceRangeId": 3,
+    "priceBand": "mid",
+    "ratingOverall": 4.661016,
+    "openingHours": {
+      "normalHours": [
+        {
+          "dateDisplayString": "星期一至四",
+          "isCurrent": false,
+          "isUncertain": false,
+          "times": [
+            {
+              "isCurrent": false,
+              "timeDisplayString": "11:00 - 23:00"
+            }
+          ]
+        },
+        {
+          "dateDisplayString": "星期五至六",
+          "isCurrent": true,
+          "isUncertain": false,
+          "times": [
+            {
+              "isCurrent": true,
+              "timeDisplayString": "11:00 - 01:00"
+            }
+          ]
+        },
+        {
+          "dateDisplayString": "星期日",
+          "isCurrent": false,
+          "isUncertain": false,
+          "times": [
+            {
+              "isCurrent": false,
+              "timeDisplayString": "11:00 - 23:00"
+            }
+          ]
+        }
+      ],
+      "specialHours": [],
+      "todayHour": {
+        "dateDisplayString": "營業中",
+        "isCurrent": true,
+        "isUncertain": false,
+        "times": [
+          {
+            "isCurrent": true,
+            "timeDisplayString": "11:00 - 01:00"
+          }
+        ]
+      },
+      "note": ""
+    },
+    "popularDishes": [],
+    "name_en": "Fugazzi Pizzeria Napoletana",
+    "name_zhHant": "Fugazzi Pizzeria Napoletana",
+    "name_zhHans": "Fugazzi Pizzeria Napoletana",
+    "area_zhHant": "九龍城",
+    "area_zhHans": "九龙城",
+    "cuisine_en": "Italian",
+    "cuisine_zhHant": "意大利菜",
+    "cuisine_zhHans": "意大利菜",
+    "tags_en": [
+      "italian",
+      "pizza"
+    ],
+    "tags_zhHant": [
+      "意大利菜",
+      "薄餅"
+    ],
+    "tags_zhHans": [
+      "意大利菜",
+      "薄饼"
+    ],
+    "sourceCategories": [
+      "意大利菜",
+      "薄餅",
+      "早午餐",
+      "親子餐廳"
+    ],
+    "categories": [
+      "意大利菜",
+      "薄餅",
+      "早午餐",
+      "親子餐廳"
+    ]
+  },
+  {
+    "id": "openrice-1126932",
+    "name": "頂立料理所",
+    "area": "太子",
+    "district": "太子",
+    "cuisine": "Japanese",
+    "budget": "$$",
+    "mealTypes": [
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends",
+      "date"
+    ],
+    "speed": "normal",
+    "tags": [
+      "japanese"
+    ],
+    "description_en": "",
+    "description_zhHant": "",
+    "description_zhHans": "",
+    "recommendedFor_en": "",
+    "recommendedFor_zhHant": "",
+    "recommendedFor_zhHans": "",
+    "sourceNote": "Imported from local OpenRice Apify candidate pipeline. Requires review before public display.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": false,
+    "reviewNotes": "Transformed OpenRice Apify candidate. Requires manual review before public display.",
+    "sourceLinks": [],
+    "sourceConfidence": "low",
+    "dataOrigin": "openrice_apify",
+    "sourceRestaurantId": 1126932,
+    "sourceName": "openrice_apify",
+    "address": "運動場道3號地舖",
+    "latitude": 22.3251489,
+    "longitude": 114.1676775,
+    "priceRangeId": 2,
+    "priceBand": "affordable",
+    "ratingOverall": 4.57647,
+    "openingHours": {
+      "normalHours": [
+        {
+          "dateDisplayString": "星期一至日",
+          "isCurrent": true,
+          "isUncertain": false,
+          "times": [
+            {
+              "isCurrent": true,
+              "timeDisplayString": "12:00 - 21:00"
+            }
+          ]
+        }
+      ],
+      "specialHours": [],
+      "todayHour": {
+        "dateDisplayString": "營業中",
+        "isCurrent": true,
+        "isUncertain": false,
+        "times": [
+          {
+            "isCurrent": true,
+            "timeDisplayString": "12:00 - 21:00"
+          }
+        ]
+      },
+      "note": "*2030 last order"
+    },
+    "popularDishes": [],
+    "name_en": "",
+    "name_zhHant": "頂立料理所",
+    "name_zhHans": "頂立料理所",
+    "area_zhHant": "太子",
+    "area_zhHans": "太子",
+    "cuisine_en": "Japanese",
+    "cuisine_zhHant": "日本菜",
+    "cuisine_zhHans": "日本菜",
+    "tags_en": [
+      "japanese"
+    ],
+    "tags_zhHant": [
+      "日本菜"
+    ],
+    "tags_zhHans": [
+      "日本菜"
+    ],
+    "sourceCategories": [
+      "日本菜"
+    ],
+    "categories": [
+      "日本菜"
+    ]
+  },
+  {
+    "id": "openrice-1126410",
+    "name": "蝦三少蝦湯專門店",
+    "area": "上環",
+    "district": "上環",
+    "cuisine": "Chinese",
+    "budget": "$$",
+    "mealTypes": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "situations": [
+      "solo",
+      "friends"
+    ],
+    "speed": "quick",
+    "tags": [
+      "hong kong style",
+      "ramen"
+    ],
+    "description_en": "",
+    "description_zhHant": "",
+    "description_zhHans": "",
+    "recommendedFor_en": "",
+    "recommendedFor_zhHant": "",
+    "recommendedFor_zhHans": "",
+    "sourceNote": "Imported from local OpenRice Apify candidate pipeline. Requires review before public display.",
+    "verificationStatus": "unverified",
+    "verified": false,
+    "lastChecked": null,
+    "needsReview": true,
+    "publicDisplay": false,
+    "reviewNotes": "Transformed OpenRice Apify candidate. Requires manual review before public display.",
+    "sourceLinks": [],
+    "sourceConfidence": "low",
+    "dataOrigin": "openrice_apify",
+    "sourceRestaurantId": 1126410,
+    "sourceName": "openrice_apify",
+    "address": "新街市街38號地舖",
+    "latitude": 22.287472,
+    "longitude": 114.1493047,
+    "priceRangeId": 3,
+    "priceBand": "mid",
+    "ratingOverall": 4.4725,
+    "openingHours": {
+      "normalHours": [
+        {
+          "dateDisplayString": "星期一至日",
+          "isCurrent": true,
+          "isUncertain": false,
+          "times": [
+            {
+              "isCurrent": true,
+              "timeDisplayString": "12:00 - 22:00"
+            }
+          ]
+        }
+      ],
+      "specialHours": [],
+      "todayHour": {
+        "dateDisplayString": "營業中",
+        "isCurrent": true,
+        "isUncertain": false,
+        "times": [
+          {
+            "isCurrent": true,
+            "timeDisplayString": "12:00 - 22:00"
+          }
+        ]
+      },
+      "note": ""
+    },
+    "popularDishes": [],
+    "name_en": "",
+    "name_zhHant": "蝦三少蝦湯專門店",
+    "name_zhHans": "虾三少虾汤专门店",
+    "area_zhHant": "上環",
+    "area_zhHans": "上环",
+    "cuisine_en": "Chinese",
+    "cuisine_zhHant": "港式",
+    "cuisine_zhHans": "港式",
+    "tags_en": [
+      "hong kong style",
+      "ramen"
+    ],
+    "tags_zhHant": [
+      "港式",
+      "拉麵"
+    ],
+    "tags_zhHans": [
+      "港式",
+      "拉面"
+    ],
+    "sourceCategories": [
+      "港式",
+      "拉麵"
+    ],
+    "categories": [
+      "港式",
+      "拉麵"
+    ]
   }
 ]
