@@ -91,6 +91,9 @@ def normalized_text(value: Any) -> str:
 
 
 def candidate_id(candidate: dict[str, Any]) -> str:
+    existing_id = safe_text(candidate.get("id"))
+    if existing_id:
+        return existing_id
     source_id = safe_number(candidate.get("sourceRestaurantId"), integer=True)
     if source_id is not None:
         return f"openrice-{source_id}"
@@ -106,38 +109,51 @@ def to_public_schema(candidate: dict[str, Any]) -> dict[str, Any]:
         if isinstance(item, str) and item.strip()
     ]
     district = safe_text(candidate.get("district"))
+    area = safe_text(candidate.get("area")) or district
     price_band = safe_text(candidate.get("priceBand")) or "unknown"
     source_restaurant_id = safe_number(candidate.get("sourceRestaurantId"), integer=True)
+    tags = safe_list(candidate.get("tags")) or categories
 
     return {
         "id": candidate_id(candidate),
         "name": safe_text(candidate.get("name")),
-        "area": district,
+        "name_en": safe_text(candidate.get("name_en")),
+        "name_zhHant": safe_text(candidate.get("name_zhHant")),
+        "name_zhHans": safe_text(candidate.get("name_zhHans")),
+        "area": area,
+        "area_zhHant": safe_text(candidate.get("area_zhHant")),
+        "area_zhHans": safe_text(candidate.get("area_zhHans")),
         "district": district,
-        "cuisine": categories[0] if categories else "Unknown",
-        "budget": BUDGET_MAP.get(price_band, "$$"),
-        "mealTypes": [],
-        "situations": [],
-        "speed": "regular",
-        "tags": categories,
-        "description_en": "",
-        "description_zhHant": "",
-        "description_zhHans": "",
-        "recommendedFor_en": "",
-        "recommendedFor_zhHant": "",
-        "recommendedFor_zhHans": "",
+        "cuisine": safe_text(candidate.get("cuisine")) or (categories[0] if categories else "Unknown"),
+        "cuisine_en": safe_text(candidate.get("cuisine_en")),
+        "cuisine_zhHant": safe_text(candidate.get("cuisine_zhHant")),
+        "cuisine_zhHans": safe_text(candidate.get("cuisine_zhHans")),
+        "budget": safe_text(candidate.get("budget")) or BUDGET_MAP.get(price_band, "$$"),
+        "mealTypes": safe_list(candidate.get("mealTypes")),
+        "situations": safe_list(candidate.get("situations")),
+        "speed": safe_text(candidate.get("speed")) or "regular",
+        "tags": tags,
+        "tags_en": safe_list(candidate.get("tags_en")),
+        "tags_zhHant": safe_list(candidate.get("tags_zhHant")),
+        "tags_zhHans": safe_list(candidate.get("tags_zhHans")),
+        "description_en": safe_text(candidate.get("description_en")),
+        "description_zhHant": safe_text(candidate.get("description_zhHant")),
+        "description_zhHans": safe_text(candidate.get("description_zhHans")),
+        "recommendedFor_en": safe_text(candidate.get("recommendedFor_en")),
+        "recommendedFor_zhHant": safe_text(candidate.get("recommendedFor_zhHant")),
+        "recommendedFor_zhHans": safe_text(candidate.get("recommendedFor_zhHans")),
         "sourceNote": SOURCE_NOTE,
         "verificationStatus": "unverified",
         "verified": False,
         "lastChecked": None,
         "needsReview": True,
         "publicDisplay": False,
-        "reviewNotes": REVIEW_NOTES,
-        "sourceLinks": [],
-        "sourceConfidence": "low",
+        "reviewNotes": safe_text(candidate.get("reviewNotes")) or REVIEW_NOTES,
+        "sourceLinks": safe_list(candidate.get("sourceLinks")),
+        "sourceConfidence": safe_text(candidate.get("sourceConfidence")) or "low",
         "dataOrigin": "openrice_apify",
         "sourceRestaurantId": source_restaurant_id,
-        "sourceName": "openrice_apify",
+        "sourceName": safe_text(candidate.get("sourceName")) or "openrice_apify",
         "address": safe_text(candidate.get("address")),
         "latitude": safe_number(candidate.get("latitude")),
         "longitude": safe_number(candidate.get("longitude")),

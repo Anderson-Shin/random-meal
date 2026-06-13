@@ -95,6 +95,26 @@ These optional fields may come from the local OpenRice Apify candidate pipeline:
 
 Optional OpenRice Apify fields do not mean an entry is verified or approved for public display.
 
+## Optional Multilingual Display Fields
+
+The local mapping layer may generate these optional display helper fields:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `name_en` | string | English restaurant name when reliably available. |
+| `name_zhHant` | string | Traditional Chinese or original-language restaurant name helper. |
+| `name_zhHans` | string | Simplified Chinese restaurant name helper generated with the local static conversion map. |
+| `area_zhHant` | string | Traditional Chinese area display helper. |
+| `area_zhHans` | string | Simplified Chinese area display helper. |
+| `cuisine_en` | string | English cuisine display helper. |
+| `cuisine_zhHant` | string | Traditional Chinese cuisine display helper. |
+| `cuisine_zhHans` | string | Simplified Chinese cuisine display helper. |
+| `tags_en` | string[] | English mapped tag helpers. |
+| `tags_zhHant` | string[] | Traditional Chinese mapped tag helpers. |
+| `tags_zhHans` | string[] | Simplified Chinese mapped tag helpers. |
+
+These fields may be generated from local mapping configs. They do not replace the core `name`, `area`, `cuisine`, or `tags` fields. Public descriptions and recommendations must still be original and manually reviewed.
+
 ## Verification Fields
 
 | Field | Type | Description |

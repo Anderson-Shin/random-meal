@@ -1,0 +1,23 @@
+[
+  {
+    "sourceLabels": ["Central", "中環", "中环"],
+    "area": "Central",
+    "district": "Central and Western Hong Kong",
+    "area_zhHant": "中環",
+    "area_zhHans": "中环"
+  },
+  {
+    "sourceLabels": ["Quarry Bay", "鰂魚涌", "鲗鱼涌"],
+    "area": "Quarry Bay",
+    "district": "Eastern Hong Kong",
+    "area_zhHant": "鰂魚涌",
+    "area_zhHans": "鲗鱼涌"
+  },
+  {
+    "sourceLabels": ["Kwun Tong", "觀塘", "观塘"],
+    "area": "Kwun Tong",
+    "district": "Kwun Tong District",
+    "area_zhHant": "觀塘",
+    "area_zhHans": "观塘"
+  }
+]

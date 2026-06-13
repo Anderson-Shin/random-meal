@@ -1,1 +1,272 @@
-{}
+{
+  "Chinese": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "中菜", "cuisine_zhHans": "中菜",
+    "tags": ["chinese"], "tags_en": ["chinese"], "tags_zhHant": ["中菜"], "tags_zhHans": ["中菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "中菜": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "中菜", "cuisine_zhHans": "中菜",
+    "tags": ["chinese"], "tags_en": ["chinese"], "tags_zhHant": ["中菜"], "tags_zhHans": ["中菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "粵菜": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "粵菜", "cuisine_zhHans": "粤菜",
+    "tags": ["cantonese"], "tags_en": ["cantonese"], "tags_zhHant": ["粵菜"], "tags_zhHans": ["粤菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "港式": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "港式", "cuisine_zhHans": "港式",
+    "tags": ["hong kong style"], "tags_en": ["hong kong style"], "tags_zhHant": ["港式"], "tags_zhHans": ["港式"],
+    "mealTypes": ["breakfast", "lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "茶餐廳": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "茶餐廳", "cuisine_zhHans": "茶餐厅",
+    "tags": ["cha chaan teng"], "tags_en": ["cha chaan teng"], "tags_zhHant": ["茶餐廳"], "tags_zhHans": ["茶餐厅"],
+    "mealTypes": ["breakfast", "lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "點心": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "點心", "cuisine_zhHans": "点心",
+    "tags": ["dim sum"], "tags_en": ["dim sum"], "tags_zhHant": ["點心"], "tags_zhHans": ["点心"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "火鍋": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "火鍋", "cuisine_zhHans": "火锅",
+    "tags": ["hot pot"], "tags_en": ["hot pot"], "tags_zhHant": ["火鍋"], "tags_zhHans": ["火锅"],
+    "mealTypes": ["dinner"], "situations": ["friends", "team lunch"], "speed": "relaxed"
+  },
+  "川菜": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "川菜", "cuisine_zhHans": "川菜",
+    "tags": ["sichuan"], "tags_en": ["sichuan"], "tags_zhHant": ["川菜"], "tags_zhHans": ["川菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "台灣菜": {
+    "cuisine": "Chinese", "cuisine_en": "Chinese", "cuisine_zhHant": "台灣菜", "cuisine_zhHans": "台湾菜",
+    "tags": ["taiwanese"], "tags_en": ["taiwanese"], "tags_zhHant": ["台灣菜"], "tags_zhHans": ["台湾菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "normal"
+  },
+  "Japanese": {
+    "cuisine": "Japanese", "cuisine_en": "Japanese", "cuisine_zhHant": "日本菜", "cuisine_zhHans": "日本菜",
+    "tags": ["japanese"], "tags_en": ["japanese"], "tags_zhHant": ["日本菜"], "tags_zhHans": ["日本菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends", "date"], "speed": "normal"
+  },
+  "日本菜": {
+    "cuisine": "Japanese", "cuisine_en": "Japanese", "cuisine_zhHant": "日本菜", "cuisine_zhHans": "日本菜",
+    "tags": ["japanese"], "tags_en": ["japanese"], "tags_zhHant": ["日本菜"], "tags_zhHans": ["日本菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends", "date"], "speed": "normal"
+  },
+  "壽司": {
+    "cuisine": "Japanese", "cuisine_en": "Japanese", "cuisine_zhHant": "壽司", "cuisine_zhHans": "寿司",
+    "tags": ["sushi"], "tags_en": ["sushi"], "tags_zhHant": ["壽司"], "tags_zhHans": ["寿司"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "date"], "speed": "normal"
+  },
+  "居酒屋": {
+    "cuisine": "Japanese", "cuisine_en": "Japanese", "cuisine_zhHant": "居酒屋", "cuisine_zhHans": "居酒屋",
+    "tags": ["izakaya"], "tags_en": ["izakaya"], "tags_zhHant": ["居酒屋"], "tags_zhHans": ["居酒屋"],
+    "mealTypes": ["dinner", "late night"], "situations": ["friends", "date"], "speed": "relaxed"
+  },
+  "Korean": {
+    "cuisine": "Korean", "cuisine_en": "Korean", "cuisine_zhHant": "韓國菜", "cuisine_zhHans": "韩国菜",
+    "tags": ["korean"], "tags_en": ["korean"], "tags_zhHant": ["韓國菜"], "tags_zhHans": ["韩国菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "韓國菜": {
+    "cuisine": "Korean", "cuisine_en": "Korean", "cuisine_zhHant": "韓國菜", "cuisine_zhHans": "韩国菜",
+    "tags": ["korean"], "tags_en": ["korean"], "tags_zhHant": ["韓國菜"], "tags_zhHans": ["韩国菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "Thai": {
+    "cuisine": "Thai", "cuisine_en": "Thai", "cuisine_zhHant": "泰國菜", "cuisine_zhHans": "泰国菜",
+    "tags": ["thai"], "tags_en": ["thai"], "tags_zhHant": ["泰國菜"], "tags_zhHans": ["泰国菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "泰國菜": {
+    "cuisine": "Thai", "cuisine_en": "Thai", "cuisine_zhHant": "泰國菜", "cuisine_zhHans": "泰国菜",
+    "tags": ["thai"], "tags_en": ["thai"], "tags_zhHant": ["泰國菜"], "tags_zhHans": ["泰国菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "Vietnamese": {
+    "cuisine": "Vietnamese", "cuisine_en": "Vietnamese", "cuisine_zhHant": "越南菜", "cuisine_zhHans": "越南菜",
+    "tags": ["vietnamese"], "tags_en": ["vietnamese"], "tags_zhHant": ["越南菜"], "tags_zhHans": ["越南菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "normal"
+  },
+  "越南菜": {
+    "cuisine": "Vietnamese", "cuisine_en": "Vietnamese", "cuisine_zhHant": "越南菜", "cuisine_zhHans": "越南菜",
+    "tags": ["vietnamese"], "tags_en": ["vietnamese"], "tags_zhHant": ["越南菜"], "tags_zhHans": ["越南菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "normal"
+  },
+  "Indian": {
+    "cuisine": "Indian", "cuisine_en": "Indian", "cuisine_zhHant": "印度菜", "cuisine_zhHans": "印度菜",
+    "tags": ["indian"], "tags_en": ["indian"], "tags_zhHant": ["印度菜"], "tags_zhHans": ["印度菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "印度菜": {
+    "cuisine": "Indian", "cuisine_en": "Indian", "cuisine_zhHant": "印度菜", "cuisine_zhHans": "印度菜",
+    "tags": ["indian"], "tags_en": ["indian"], "tags_zhHant": ["印度菜"], "tags_zhHans": ["印度菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "team lunch"], "speed": "normal"
+  },
+  "Western": {
+    "cuisine": "Western", "cuisine_en": "Western", "cuisine_zhHant": "西餐", "cuisine_zhHans": "西餐",
+    "tags": ["western"], "tags_en": ["western"], "tags_zhHant": ["西餐"], "tags_zhHans": ["西餐"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "西餐": {
+    "cuisine": "Western", "cuisine_en": "Western", "cuisine_zhHant": "西餐", "cuisine_zhHans": "西餐",
+    "tags": ["western"], "tags_en": ["western"], "tags_zhHant": ["西餐"], "tags_zhHans": ["西餐"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "Italian": {
+    "cuisine": "Italian", "cuisine_en": "Italian", "cuisine_zhHant": "意大利菜", "cuisine_zhHans": "意大利菜",
+    "tags": ["italian"], "tags_en": ["italian"], "tags_zhHant": ["意大利菜"], "tags_zhHans": ["意大利菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "意大利菜": {
+    "cuisine": "Italian", "cuisine_en": "Italian", "cuisine_zhHant": "意大利菜", "cuisine_zhHans": "意大利菜",
+    "tags": ["italian"], "tags_en": ["italian"], "tags_zhHant": ["意大利菜"], "tags_zhHans": ["意大利菜"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "薄餅": {
+    "cuisine": "Italian", "cuisine_en": "Italian", "cuisine_zhHant": "意大利菜", "cuisine_zhHans": "意大利菜",
+    "tags": ["pizza"], "tags_en": ["pizza"], "tags_zhHant": ["薄餅"], "tags_zhHans": ["薄饼"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "Pizza": {
+    "cuisine": "Italian", "cuisine_en": "Italian", "cuisine_zhHant": "意大利菜", "cuisine_zhHans": "意大利菜",
+    "tags": ["pizza"], "tags_en": ["pizza"], "tags_zhHant": ["薄餅"], "tags_zhHans": ["薄饼"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends"], "speed": "normal"
+  },
+  "Pasta": {
+    "cuisine": "Italian", "cuisine_en": "Italian", "cuisine_zhHant": "意大利菜", "cuisine_zhHans": "意大利菜",
+    "tags": ["pasta"], "tags_en": ["pasta"], "tags_zhHant": ["意粉"], "tags_zhHans": ["意粉"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "Cafe": {
+    "cuisine": "Cafe", "cuisine_en": "Cafe", "cuisine_zhHant": "咖啡店", "cuisine_zhHans": "咖啡店",
+    "tags": ["cafe"], "tags_en": ["cafe"], "tags_zhHant": ["咖啡店"], "tags_zhHans": ["咖啡店"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo", "friends", "date"], "speed": "normal"
+  },
+  "Coffee": {
+    "cuisine": "Cafe", "cuisine_en": "Cafe", "cuisine_zhHant": "咖啡店", "cuisine_zhHans": "咖啡店",
+    "tags": ["coffee"], "tags_en": ["coffee"], "tags_zhHant": ["咖啡"], "tags_zhHans": ["咖啡"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "咖啡店": {
+    "cuisine": "Cafe", "cuisine_en": "Cafe", "cuisine_zhHant": "咖啡店", "cuisine_zhHans": "咖啡店",
+    "tags": ["cafe"], "tags_en": ["cafe"], "tags_zhHant": ["咖啡店"], "tags_zhHans": ["咖啡店"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo", "friends"], "speed": "normal"
+  },
+  "Fast Food": {
+    "cuisine": "Fast Food", "cuisine_en": "Fast Food", "cuisine_zhHant": "快餐", "cuisine_zhHans": "快餐",
+    "tags": ["fast food"], "tags_en": ["fast food"], "tags_zhHant": ["快餐"], "tags_zhHans": ["快餐"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "快餐": {
+    "cuisine": "Fast Food", "cuisine_en": "Fast Food", "cuisine_zhHant": "快餐", "cuisine_zhHans": "快餐",
+    "tags": ["fast food"], "tags_en": ["fast food"], "tags_zhHant": ["快餐"], "tags_zhHans": ["快餐"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "漢堡": {
+    "cuisine": "Fast Food", "cuisine_en": "Fast Food", "cuisine_zhHant": "快餐", "cuisine_zhHans": "快餐",
+    "tags": ["burger"], "tags_en": ["burger"], "tags_zhHant": ["漢堡"], "tags_zhHans": ["汉堡"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "Burger": {
+    "cuisine": "Fast Food", "cuisine_en": "Fast Food", "cuisine_zhHant": "快餐", "cuisine_zhHans": "快餐",
+    "tags": ["burger"], "tags_en": ["burger"], "tags_zhHant": ["漢堡"], "tags_zhHans": ["汉堡"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "Sandwich": {
+    "cuisine": "Fast Food", "cuisine_en": "Fast Food", "cuisine_zhHant": "快餐", "cuisine_zhHans": "快餐",
+    "tags": ["sandwich"], "tags_en": ["sandwich"], "tags_zhHant": ["三文治"], "tags_zhHans": ["三明治"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo"], "speed": "quick"
+  },
+  "Noodles": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "粉麵", "cuisine_zhHans": "粉面",
+    "tags": ["noodles"], "tags_en": ["noodles"], "tags_zhHant": ["粉麵"], "tags_zhHans": ["粉面"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "粉麵": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "粉麵", "cuisine_zhHans": "粉面",
+    "tags": ["noodles"], "tags_en": ["noodles"], "tags_zhHant": ["粉麵"], "tags_zhHans": ["粉面"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "quick"
+  },
+  "米線": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "米線", "cuisine_zhHans": "米线",
+    "tags": ["rice noodles"], "tags_en": ["rice noodles"], "tags_zhHant": ["米線"], "tags_zhHans": ["米线"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "拉麵": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "拉麵", "cuisine_zhHans": "拉面",
+    "tags": ["ramen"], "tags_en": ["ramen"], "tags_zhHant": ["拉麵"], "tags_zhHans": ["拉面"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "車仔麵": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "車仔麵", "cuisine_zhHans": "车仔面",
+    "tags": ["cart noodles"], "tags_en": ["cart noodles"], "tags_zhHant": ["車仔麵"], "tags_zhHans": ["车仔面"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "Wonton Noodles": {
+    "cuisine": "Noodles", "cuisine_en": "Noodles", "cuisine_zhHant": "雲吞麵", "cuisine_zhHans": "云吞面",
+    "tags": ["wonton noodles"], "tags_en": ["wonton noodles"], "tags_zhHant": ["雲吞麵"], "tags_zhHans": ["云吞面"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "Dessert": {
+    "cuisine": "Dessert", "cuisine_en": "Dessert", "cuisine_zhHant": "甜品", "cuisine_zhHans": "甜品",
+    "tags": ["dessert"], "tags_en": ["dessert"], "tags_zhHant": ["甜品"], "tags_zhHans": ["甜品"],
+    "mealTypes": ["late night"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "甜品": {
+    "cuisine": "Dessert", "cuisine_en": "Dessert", "cuisine_zhHant": "甜品", "cuisine_zhHans": "甜品",
+    "tags": ["dessert"], "tags_en": ["dessert"], "tags_zhHant": ["甜品"], "tags_zhHans": ["甜品"],
+    "mealTypes": ["late night"], "situations": ["friends", "date"], "speed": "normal"
+  },
+  "Bakery": {
+    "cuisine": "Dessert", "cuisine_en": "Dessert", "cuisine_zhHant": "麵包店", "cuisine_zhHans": "面包店",
+    "tags": ["bakery"], "tags_en": ["bakery"], "tags_zhHant": ["麵包店"], "tags_zhHans": ["面包店"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo"], "speed": "quick"
+  },
+  "麵包店": {
+    "cuisine": "Dessert", "cuisine_en": "Dessert", "cuisine_zhHant": "麵包店", "cuisine_zhHans": "面包店",
+    "tags": ["bakery"], "tags_en": ["bakery"], "tags_zhHant": ["麵包店"], "tags_zhHans": ["面包店"],
+    "mealTypes": ["breakfast", "lunch"], "situations": ["solo"], "speed": "quick"
+  },
+  "Healthy": {
+    "cuisine": "Healthy", "cuisine_en": "Healthy", "cuisine_zhHant": "健康食品", "cuisine_zhHans": "健康食品",
+    "tags": ["healthy"], "tags_en": ["healthy"], "tags_zhHant": ["健康"], "tags_zhHans": ["健康"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo"], "speed": "quick"
+  },
+  "素食": {
+    "cuisine": "Healthy", "cuisine_en": "Healthy", "cuisine_zhHant": "素食", "cuisine_zhHans": "素食",
+    "tags": ["vegetarian"], "tags_en": ["vegetarian"], "tags_zhHant": ["素食"], "tags_zhHans": ["素食"],
+    "mealTypes": ["lunch", "dinner"], "situations": ["solo", "friends"], "speed": "normal"
+  },
+  "沙律": {
+    "cuisine": "Healthy", "cuisine_en": "Healthy", "cuisine_zhHant": "沙律", "cuisine_zhHans": "沙拉",
+    "tags": ["salad"], "tags_en": ["salad"], "tags_zhHant": ["沙律"], "tags_zhHans": ["沙拉"],
+    "mealTypes": ["lunch"], "situations": ["solo"], "speed": "quick"
+  },
+  "Salad": {
+    "cuisine": "Healthy", "cuisine_en": "Healthy", "cuisine_zhHant": "沙律", "cuisine_zhHans": "沙拉",
+    "tags": ["salad"], "tags_en": ["salad"], "tags_zhHant": ["沙律"], "tags_zhHans": ["沙拉"],
+    "mealTypes": ["lunch"], "situations": ["solo"], "speed": "quick"
+  },
+  "Bar": {
+    "cuisine": "Bar", "cuisine_en": "Bar", "cuisine_zhHant": "酒吧", "cuisine_zhHans": "酒吧",
+    "tags": ["bar"], "tags_en": ["bar"], "tags_zhHant": ["酒吧"], "tags_zhHans": ["酒吧"],
+    "mealTypes": ["dinner", "late night"], "situations": ["friends", "date"], "speed": "relaxed"
+  },
+  "Pub": {
+    "cuisine": "Bar", "cuisine_en": "Bar", "cuisine_zhHant": "酒吧", "cuisine_zhHans": "酒吧",
+    "tags": ["pub"], "tags_en": ["pub"], "tags_zhHant": ["酒吧"], "tags_zhHans": ["酒吧"],
+    "mealTypes": ["dinner", "late night"], "situations": ["friends"], "speed": "relaxed"
+  },
+  "酒吧": {
+    "cuisine": "Bar", "cuisine_en": "Bar", "cuisine_zhHant": "酒吧", "cuisine_zhHans": "酒吧",
+    "tags": ["bar"], "tags_en": ["bar"], "tags_zhHant": ["酒吧"], "tags_zhHans": ["酒吧"],
+    "mealTypes": ["dinner", "late night"], "situations": ["friends", "date"], "speed": "relaxed"
+  },
+  "Other": {
+    "cuisine": "Other", "cuisine_en": "Other", "cuisine_zhHant": "其他", "cuisine_zhHans": "其他",
+    "tags": ["other"], "tags_en": ["other"], "tags_zhHant": ["其他"], "tags_zhHans": ["其他"],
+    "mealTypes": [], "situations": [], "speed": "normal"
+  }
+}

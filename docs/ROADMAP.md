@@ -125,6 +125,15 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [x] Mark the separate openrice-apify-workspace as no longer active
 - [x] Document tools/openrice_apify/ as the workflow for future data expansion
 
+## v0.4.9 OpenRice Mapping and Data Expansion Preparation
+
+- [x] Build OpenRice-to-random-meal mapping layer
+- [x] Add district, category, price, and multilingual display mapping
+- [x] Target first data expansion areas: Central, Quarry Bay, and Kwun Tong
+- [x] Prepare for a monthly local database refresh workflow
+- [ ] Collect roughly 40 to 50 hidden candidates per target area
+- [ ] Manually approve an initial reviewed subset per target area
+
 ## v0.5.0 UX Improvements
 
 - [ ] Improve roulette animation

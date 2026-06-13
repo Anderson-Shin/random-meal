@@ -23,17 +23,23 @@ cd /Users/minseong/Desktop/github/random-meal
 
 python tools/openrice_apify/scripts/normalize_openrice.py
 
+python tools/openrice_apify/scripts/transform_candidates.py
+
 python tools/openrice_apify/scripts/export_candidates.py \
   --input tools/openrice_apify/processed/openrice_candidates.json \
   --output tools/openrice_apify/processed/openrice_candidates.export.json
 
-python tools/openrice_apify/scripts/merge_candidates.py
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_transformed_candidates.json
 
-python tools/openrice_apify/scripts/merge_candidates.py --write
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_transformed_candidates.json \
+  --write
 ```
 
 - `normalize_openrice.py` creates normalized candidates from local raw JSON.
-- `export_candidates.py` validates candidates for manual review.
+- `transform_candidates.py` applies local district, category, price, and multilingual mappings.
+- `export_candidates.py` optionally validates normalized candidates before transformation.
 - `merge_candidates.py` performs a dry run by default.
 - `merge_candidates.py --write` appends non-duplicate hidden candidates to `assets/data/restaurants.json`.
 - Merged entries remain hidden with `publicDisplay: false`.
@@ -51,8 +57,11 @@ It does not modify `assets/data/restaurants.json`, change frontend behavior, or 
 Manually downloaded OpenRice Apify JSON
   -> normalize_openrice.py
   -> processed/openrice_candidates.json
-  -> export_candidates.py
-  -> reviewed future-import candidate file
+     -> export_candidates.py (optional normalized-candidate validation)
+     -> transform_candidates.py
+     -> processed/openrice_transformed_candidates.json
+     -> merge_candidates.py
+     -> hidden public-database candidates for manual review
 ```
 
 `run_actor.py` is an optional local helper for an explicitly approved future Apify run. It is never called by the normalizer or exporter.
@@ -70,6 +79,7 @@ tools/openrice_apify/
   config/
     price_map.json
     category_map.json
+    district_map.json
   raw/
     .gitkeep
   processed/
@@ -77,6 +87,8 @@ tools/openrice_apify/
   scripts/
     run_actor.py
     normalize_openrice.py
+    mapping_utils.py
+    transform_candidates.py
     export_candidates.py
     merge_candidates.py
     list_hidden_candidates.py
@@ -116,9 +128,45 @@ Output candidates keep only the approved factual fields and always include:
 
 The pipeline does not automatically import candidates into the public database.
 
+## Mapping and Transform Layer
+
+The local mapping flow prepares richer random-meal style candidates before merge and review:
+
+```text
+Raw Apify JSON
+  -> normalize_openrice.py
+  -> transform_candidates.py
+  -> merge_candidates.py
+  -> list_hidden_candidates.py
+  -> generate_review_template.py
+  -> apply_review_updates.py
+```
+
+Run the mapping flow from the repository root:
+
+```bash
+python tools/openrice_apify/scripts/normalize_openrice.py
+
+python tools/openrice_apify/scripts/transform_candidates.py
+
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_transformed_candidates.json
+
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_transformed_candidates.json \
+  --write
+```
+
+- `district_map.json` controls area and district mapping.
+- `category_map.json` controls cuisine, tags, meal types, situations, speed, and multilingual display helpers.
+- `price_map.json` controls price-band mapping; the transformer converts the band into the public budget scale.
+- The first expansion targets are Central, Quarry Bay, and Kwun Tong, with roughly 40 to 50 local candidates per area.
+- All transformed and newly merged candidates remain hidden until manually reviewed.
+- A monthly local database refresh cadence may be used after the workflow is proven.
+
 ## Merge Candidates
 
-The merge tool converts normalized OpenRice candidates into the existing public restaurant schema. It is dry-run only by default:
+The merge tool converts normalized or transformed OpenRice candidates into the existing public restaurant schema. It is dry-run only by default:
 
 ```bash
 python tools/openrice_apify/scripts/merge_candidates.py
