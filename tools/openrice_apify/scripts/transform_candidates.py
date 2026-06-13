@@ -104,6 +104,10 @@ def transform(
         "longitude": safe_number(candidate.get("longitude")),
         "categories": safe_list(candidate.get("categories")),
         **category_fields,
+        "sourceCategories": (
+            safe_list(category_fields.get("sourceCategories"))
+            or safe_list(candidate.get("categories"))
+        ),
         **price_fields,
         "priceRangeId": safe_number(candidate.get("priceRangeId"), integer=True),
         "ratingOverall": safe_number(candidate.get("ratingOverall")),

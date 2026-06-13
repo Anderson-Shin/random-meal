@@ -48,9 +48,23 @@ def list_or_empty(value: Any) -> list[Any]:
 
 
 def summarize(candidate: dict[str, Any]) -> dict[str, Any]:
+    transformed = any(
+        key in candidate
+        for key in ("sourceCategories", "tags_en", "cuisine_en", "area_zhHant")
+    )
+    tag_values = candidate.get("tags") if transformed else (
+        candidate.get("tags") or candidate.get("categories")
+    )
     tags = [
         text_or_default(item)
-        for item in list_or_empty(candidate.get("tags") or candidate.get("categories"))
+        for item in list_or_empty(tag_values)
+        if text_or_default(item)
+    ]
+    source_categories = [
+        text_or_default(item)
+        for item in list_or_empty(
+            candidate.get("sourceCategories") or candidate.get("categories")
+        )
         if text_or_default(item)
     ]
     return {
@@ -63,6 +77,7 @@ def summarize(candidate: dict[str, Any]) -> dict[str, Any]:
         "priceBand": text_or_default(candidate.get("priceBand")),
         "ratingOverall": candidate.get("ratingOverall"),
         "tags": tags,
+        "sourceCategories": source_categories,
         "popularDishesCount": len(list_or_empty(candidate.get("popularDishes"))),
         "hasOpeningHours": bool(candidate.get("openingHours")),
         "needsReview": candidate.get("needsReview"),
@@ -93,6 +108,7 @@ def print_table(candidates: list[dict[str, Any]]) -> None:
     print(f"Found {len(candidates)} hidden OpenRice candidates.")
     for index, candidate in enumerate(candidates, start=1):
         tags = ", ".join(candidate["tags"]) or "-"
+        source_categories = ", ".join(candidate["sourceCategories"]) or "-"
         print()
         print(f"{index}. {display(candidate['id'])}")
         print(f"   Name: {display(candidate['name'])}")
@@ -103,6 +119,7 @@ def print_table(candidates: list[dict[str, Any]]) -> None:
         print(f"   Price Band: {display(candidate['priceBand'])}")
         print(f"   Rating Overall: {display(candidate['ratingOverall'])}")
         print(f"   Tags: {tags}")
+        print(f"   Source Categories: {source_categories}")
         print(f"   Popular Dishes: {candidate['popularDishesCount']}")
         print(f"   Has Opening Hours: {display(candidate['hasOpeningHours'])}")
         print(f"   Needs Review: {display(candidate['needsReview'])}")

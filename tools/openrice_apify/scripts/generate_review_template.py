@@ -81,6 +81,9 @@ def review_object(candidate: dict[str, Any]) -> dict[str, Any]:
         "tags_en": list_or_empty(candidate.get("tags_en")),
         "tags_zhHant": list_or_empty(candidate.get("tags_zhHant")),
         "tags_zhHans": list_or_empty(candidate.get("tags_zhHans")),
+        "sourceCategories": list_or_empty(
+            candidate.get("sourceCategories") or candidate.get("categories")
+        ),
         "popularDishes": list_or_empty(candidate.get("popularDishes")),
         "openingHours": object_or_empty(candidate.get("openingHours")),
         "reviewDecision": "pending",

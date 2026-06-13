@@ -160,6 +160,8 @@ python tools/openrice_apify/scripts/merge_candidates.py \
 - `district_map.json` controls area and district mapping.
 - `category_map.json` controls cuisine, tags, meal types, situations, speed, and multilingual display helpers.
 - `price_map.json` controls price-band mapping; the transformer converts the band into the public budget scale.
+- Raw OpenRice category labels are preserved separately as `sourceCategories`.
+- `tags` contains random-meal service tags. Multilingual display/helper tags are stored in `tags_en`, `tags_zhHant`, and `tags_zhHans`.
 - The first expansion targets are Central, Quarry Bay, and Kwun Tong, with roughly 40 to 50 local candidates per area.
 - All transformed and newly merged candidates remain hidden until manually reviewed.
 - A monthly local database refresh cadence may be used after the workflow is proven.

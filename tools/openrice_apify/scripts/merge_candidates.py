@@ -112,7 +112,14 @@ def to_public_schema(candidate: dict[str, Any]) -> dict[str, Any]:
     area = safe_text(candidate.get("area")) or district
     price_band = safe_text(candidate.get("priceBand")) or "unknown"
     source_restaurant_id = safe_number(candidate.get("sourceRestaurantId"), integer=True)
-    tags = safe_list(candidate.get("tags")) or categories
+    transformed = any(
+        key in candidate
+        for key in ("sourceCategories", "tags_en", "cuisine_en", "area_zhHant")
+    )
+    tags = safe_list(candidate.get("tags")) if transformed else (
+        safe_list(candidate.get("tags")) or categories
+    )
+    source_categories = safe_list(candidate.get("sourceCategories")) or categories
 
     return {
         "id": candidate_id(candidate),
@@ -136,6 +143,7 @@ def to_public_schema(candidate: dict[str, Any]) -> dict[str, Any]:
         "tags_en": safe_list(candidate.get("tags_en")),
         "tags_zhHant": safe_list(candidate.get("tags_zhHant")),
         "tags_zhHans": safe_list(candidate.get("tags_zhHans")),
+        "sourceCategories": source_categories,
         "description_en": safe_text(candidate.get("description_en")),
         "description_zhHant": safe_text(candidate.get("description_zhHant")),
         "description_zhHans": safe_text(candidate.get("description_zhHans")),

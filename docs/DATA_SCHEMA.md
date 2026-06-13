@@ -79,6 +79,7 @@ These optional fields may come from the local OpenRice Apify candidate pipeline:
 | `ratingOverall` | number or null | Source rating hint retained for internal candidate review only. |
 | `openingHours` | object | Source opening-hours hint requiring manual verification. |
 | `popularDishes` | string[] | Source popular-dish hints retained for internal review only. |
+| `sourceCategories` | string[] | Original source category labels preserved for traceability and mapping review. These are not random-meal service tags. |
 
 `assets/data/restaurants.json` remains the public static source of truth. OpenRice-derived entries must remain hidden until manually reviewed and should start with:
 
@@ -114,6 +115,8 @@ The local mapping layer may generate these optional display helper fields:
 | `tags_zhHans` | string[] | Simplified Chinese mapped tag helpers. |
 
 These fields may be generated from local mapping configs. They do not replace the core `name`, `area`, `cuisine`, or `tags` fields. Public descriptions and recommendations must still be original and manually reviewed.
+
+`tags` contains normalized random-meal service and filter tags. `tags_en`, `tags_zhHant`, and `tags_zhHans` contain multilingual display/helper tags. `sourceCategories` preserves original source category labels separately for traceability and review.
 
 ## Verification Fields
 
