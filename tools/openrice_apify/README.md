@@ -97,6 +97,29 @@ python tools/openrice_apify/scripts/merge_candidates.py \
 
 The merge tool skips candidates with a duplicate `sourceRestaurantId` or duplicate normalized name and address. New entries remain `unverified`, require review, and use `publicDisplay: false`.
 
+### Merge Safety Workflow
+
+- The default command is a dry run. It reads candidates and the target database, prints a summary, and does not modify files.
+- Passing `--write` explicitly modifies `assets/data/restaurants.json` by appending non-duplicate candidates at the end.
+- Merged entries remain hidden by default with `publicDisplay: false`.
+- Manual review is still required before public display. Review current operation, district, cuisine, budget, opening hours, descriptions, and general suitability before changing `publicDisplay`.
+- Existing restaurant entries are preserved in their current order.
+- Candidate fields such as `ratingOverall`, `openingHours`, and `popularDishes` are retained as internal review hints, not automatic approval for public display.
+
+Recommended workflow:
+
+```bash
+# 1. Preview only. No files are modified.
+python tools/openrice_apify/scripts/merge_candidates.py
+
+# 2. Review the dry-run summary and candidate data manually.
+
+# 3. Explicitly append non-duplicate hidden candidates.
+python tools/openrice_apify/scripts/merge_candidates.py --write
+
+# 4. Manually review every appended entry before public display.
+```
+
 ## Setup
 
 Use a local virtual environment outside the public website runtime:
