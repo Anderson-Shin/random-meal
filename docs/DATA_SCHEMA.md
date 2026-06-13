@@ -63,6 +63,38 @@ The file contains a JSON array of restaurant objects.
 | `recommendedFor_zhHans` | string | Original Simplified Chinese recommendation summary. |
 | `sourceNote` | string | Internal provenance note confirming how the entry was curated. |
 
+## Optional OpenRice Apify Candidate Fields
+
+These optional fields may come from the local OpenRice Apify candidate pipeline:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `sourceRestaurantId` | integer or null | Source restaurant identifier used for local deduplication and traceability. |
+| `sourceName` | string | Local pipeline source name, such as `openrice_apify`. |
+| `address` | string | Candidate address hint requiring manual review. |
+| `latitude` | number or null | Candidate latitude requiring manual review. |
+| `longitude` | number or null | Candidate longitude requiring manual review. |
+| `priceRangeId` | integer or null | Source price-range identifier. |
+| `priceBand` | string | Locally mapped price band. |
+| `ratingOverall` | number or null | Source rating hint retained for internal candidate review only. |
+| `openingHours` | object | Source opening-hours hint requiring manual verification. |
+| `popularDishes` | string[] | Source popular-dish hints retained for internal review only. |
+
+`assets/data/restaurants.json` remains the public static source of truth. OpenRice-derived entries must remain hidden until manually reviewed and should start with:
+
+```json
+{
+  "verificationStatus": "unverified",
+  "verified": false,
+  "needsReview": true,
+  "publicDisplay": false,
+  "sourceConfidence": "low",
+  "dataOrigin": "openrice_apify"
+}
+```
+
+Optional OpenRice Apify fields do not mean an entry is verified or approved for public display.
+
 ## Verification Fields
 
 | Field | Type | Description |
@@ -80,7 +112,7 @@ The file contains a JSON array of restaurant objects.
 | --- | --- | --- |
 | `sourceLinks` | array | Internal list of source references used for discovery, verification, or cross-checking. An empty array is allowed for first-pass manually curated entries. |
 | `sourceConfidence` | string | Current confidence level of the entry's source support. Allowed values: `low`, `medium`, or `high`. |
-| `dataOrigin` | string | How the entry originally entered the database. Allowed values: `manual_curation`, `official_source`, `mall_directory`, `user_suggestion`, `local_research`, or `discovery_source_only`. |
+| `dataOrigin` | string | How the entry originally entered the database. Allowed values: `manual_curation`, `official_source`, `mall_directory`, `user_suggestion`, `local_research`, `discovery_source_only`, or `openrice_apify`. |
 
 Each `sourceLinks` object uses this format:
 
@@ -126,6 +158,7 @@ Allowed `dataOrigin` values:
 - `user_suggestion`
 - `local_research`
 - `discovery_source_only`
+- `openrice_apify`
 
 Default source metadata for first-pass entries:
 
@@ -141,7 +174,7 @@ Rules:
 
 - `sourceConfidence: high` requires stronger confirmation than OpenRice alone.
 - `openrice_listing` may only be used as an internal source reference.
-- OpenRice-derived reviews, ratings, rankings, photos, menu text, promotional copy, smiles, frowns, and raw HTML must never be stored.
+- OpenRice-derived reviews, rankings, photos, menu text, promotional copy, smiles, frowns, and raw HTML must never be stored. `ratingOverall` may be retained only as an optional hidden candidate-review hint for `openrice_apify` entries.
 - Empty `sourceLinks` means the entry is not yet source-documented.
 - Source metadata does not mean the restaurant is verified.
 - Verification still depends on `verificationStatus`, `verified`, `lastChecked`, `needsReview`, and `reviewNotes`.
@@ -176,7 +209,7 @@ After a successful manual check, use:
 
 - Do not scrape restaurant websites, platforms, or directories.
 - Do not copy reviews.
-- Do not copy ratings.
+- Do not use third-party ratings in public-facing content. Optional `ratingOverall` values from hidden `openrice_apify` candidates are internal review hints only.
 - Do not copy photos.
 - Do not copy menu text.
 - Use manually written descriptions and recommendations.

@@ -38,6 +38,7 @@ tools/openrice_apify/
     run_actor.py
     normalize_openrice.py
     export_candidates.py
+    merge_candidates.py
 ```
 
 ## Input
@@ -71,6 +72,30 @@ Output candidates keep only the approved factual fields and always include:
 ```
 
 The pipeline does not automatically import candidates into the public database.
+
+## Merge Candidates
+
+The merge tool converts normalized OpenRice candidates into the existing public restaurant schema. It is dry-run only by default:
+
+```bash
+python tools/openrice_apify/scripts/merge_candidates.py
+```
+
+Review the summary, then explicitly append new hidden candidates with:
+
+```bash
+python tools/openrice_apify/scripts/merge_candidates.py --write
+```
+
+Optional paths:
+
+```bash
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_candidates.json \
+  --target assets/data/restaurants.json
+```
+
+The merge tool skips candidates with a duplicate `sourceRestaurantId` or duplicate normalized name and address. New entries remain `unverified`, require review, and use `publicDisplay: false`.
 
 ## Setup
 
