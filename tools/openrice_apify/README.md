@@ -1,0 +1,126 @@
+# Local OpenRice Apify Pipeline
+
+## Purpose
+
+This directory contains a separate, local-only pipeline for preparing OpenRice Apify discovery data as review candidates.
+
+It does not modify `assets/data/restaurants.json`, change frontend behavior, or connect to Cloudflare Pages. Candidate output is not approved public restaurant data.
+
+## Pipeline
+
+```text
+Manually downloaded OpenRice Apify JSON
+  -> normalize_openrice.py
+  -> processed/openrice_candidates.json
+  -> export_candidates.py
+  -> reviewed future-import candidate file
+```
+
+`run_actor.py` is an optional local helper for an explicitly approved future Apify run. It is never called by the normalizer or exporter.
+
+The normalizer accepts input only from `raw/`, and normalization/export output paths are restricted to `processed/`. This prevents the tools from writing to the public restaurant database.
+
+## Folder Structure
+
+```text
+tools/openrice_apify/
+  README.md
+  requirements.txt
+  .env.example
+  config/
+    price_map.json
+    category_map.json
+  raw/
+    .gitkeep
+  processed/
+    .gitkeep
+  scripts/
+    run_actor.py
+    normalize_openrice.py
+    export_candidates.py
+```
+
+## Input
+
+Place manually downloaded Apify JSON files under:
+
+```text
+tools/openrice_apify/raw/
+```
+
+Input files may be JSON arrays or objects containing an `items` array. Raw downloads should be reviewed before use and should not contain credentials.
+
+`config/category_map.json` is intentionally empty because raw category names are preserved without classification in this version.
+
+## Output
+
+The normalizer writes:
+
+```text
+tools/openrice_apify/processed/openrice_candidates.json
+```
+
+Output candidates keep only the approved factual fields and always include:
+
+```json
+{
+  "dataOrigin": "openrice_apify",
+  "needsReview": true,
+  "publicDisplay": false
+}
+```
+
+The pipeline does not automatically import candidates into the public database.
+
+## Setup
+
+Use a local virtual environment outside the public website runtime:
+
+```bash
+cd tools/openrice_apify
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+```
+
+Never commit `.env` or an Apify token.
+
+## How To Run
+
+Normalize manually downloaded JSON:
+
+```bash
+python tools/openrice_apify/scripts/normalize_openrice.py
+```
+
+Validate and prepare a future-import candidate file:
+
+```bash
+python tools/openrice_apify/scripts/export_candidates.py \
+  --input tools/openrice_apify/processed/openrice_candidates.json \
+  --output tools/openrice_apify/processed/openrice_candidates.export.json
+```
+
+Optional explicit Apify actor run:
+
+```bash
+python tools/openrice_apify/scripts/run_actor.py \
+  --actor your-actor-id \
+  --input actor-input.json \
+  --output tools/openrice_apify/raw/openrice_download.json
+```
+
+The actor helper requires explicit arguments and local credentials. Do not use it without confirming source terms and project approval.
+
+## Future Integration
+
+Before any candidate can be considered for `assets/data/restaurants.json`:
+
+1. Review the normalized candidate manually.
+2. Confirm factual accuracy with stronger sources.
+3. Write original public-facing descriptions.
+4. Map fields into the active restaurant schema.
+5. Keep uncertain entries hidden with `publicDisplay: false`.
+
+Ratings, opening hours, popular dishes, coordinates, and other Apify-derived fields are candidate review hints only. Their inclusion here does not approve them for public display.
