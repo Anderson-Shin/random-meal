@@ -61,3 +61,5 @@ tools/openrice_apify/processed/openrice_review_template.json
 ```
 
 Then dry-run `apply_review_updates.py` before explicitly using `--write`. The checklist itself does not publish anything, and incomplete or non-approved review records remain hidden.
+
+Already-public OpenRice entries should be maintained manually, not re-approved through the hidden-candidate approval workflow.

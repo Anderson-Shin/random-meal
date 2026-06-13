@@ -216,7 +216,7 @@ Explicitly write complete approved updates:
 python tools/openrice_apify/scripts/apply_review_updates.py --write
 ```
 
-The apply script is dry-run by default. It rejects incomplete approvals, skips pending or rejected records, updates only OpenRice Apify entries, and does not remove their source trace fields. It never modifies non-OpenRice manual entries. Public descriptions must be original.
+The apply script is dry-run by default. It rejects incomplete approvals, skips pending or rejected records, updates only hidden OpenRice Apify entries, and does not remove their source trace fields. Already-public OpenRice entries are skipped for safety. It never modifies non-OpenRice manual entries. Public descriptions must be original.
 
 ## Setup
 

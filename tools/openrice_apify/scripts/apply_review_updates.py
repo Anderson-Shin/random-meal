@@ -120,22 +120,38 @@ def main() -> int:
     try:
         reviews = load_array(args.review_file, "review file")
         restaurants = load_array(args.target, "target")
-        openrice_by_id = {
+        hidden_openrice_by_id = {
             item.get("id"): item
             for item in restaurants
             if nonempty_text(item.get("id"))
             and item.get("dataOrigin") == "openrice_apify"
+            and item.get("publicDisplay") is False
+        }
+        public_openrice_ids = {
+            item.get("id")
+            for item in restaurants
+            if nonempty_text(item.get("id"))
+            and item.get("dataOrigin") == "openrice_apify"
+            and item.get("publicDisplay") is True
         }
 
         valid_updates = 0
         skipped = 0
         invalid = 0
         missing = 0
+        skipped_already_public = 0
 
         for review in reviews:
             review_id = review.get("id")
-            target = openrice_by_id.get(review_id)
+            target = hidden_openrice_by_id.get(review_id)
             if target is None:
+                if review_id in public_openrice_ids:
+                    skipped_already_public += 1
+                    print(
+                        f"Skipped already-public OpenRice record: {review_id}",
+                        file=sys.stderr,
+                    )
+                    continue
                 missing += 1
                 print(f"Missing target id: {review_id or '-'}", file=sys.stderr)
                 continue
@@ -168,6 +184,7 @@ def main() -> int:
     print(f"Skipped pending/rejected records: {skipped}")
     print(f"Invalid approval records: {invalid}")
     print(f"Missing target ids: {missing}")
+    print(f"Skipped already-public OpenRice records: {skipped_already_public}")
     print(f"Write mode enabled: {args.write}")
     if not args.write:
         print("Dry run only. No files were modified.")
