@@ -212,6 +212,8 @@ Do not add OpenRice scraper code unless a later local-only prototype task explic
 - Do not store or display smiles, frowns, OpenRice ratings, reviews, rankings, photos, menu text, promotional copy, or raw HTML.
 - Treat `restaurant_name`, `address`, `region`, and cuisine/type fields only as temporary discovery hints.
 - Cross-check any candidate restaurant discovered from this source with stronger sources before public display.
+- For OpenRice or Apify data work, use `tools/openrice_apify/` inside this repository.
+- Do not direct future work to the old standalone `/Users/minseong/Desktop/github/openrice-apify-workspace`; it was only a proof-of-concept.
 
 ## Data Verification Workflow
 

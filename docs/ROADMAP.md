@@ -119,6 +119,12 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [ ] Review normalized fake candidate output
 - [ ] Decide whether to allow real local candidate input
 
+## v0.4.8 OpenRice Workflow Consolidation
+
+- [x] Consolidate the OpenRice Apify proof-of-concept into the random-meal repository
+- [x] Mark the separate openrice-apify-workspace as no longer active
+- [x] Document tools/openrice_apify/ as the workflow for future data expansion
+
 ## v0.5.0 UX Improvements
 
 - [ ] Improve roulette animation

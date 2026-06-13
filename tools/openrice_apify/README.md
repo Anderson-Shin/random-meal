@@ -1,5 +1,44 @@
 # Local OpenRice Apify Pipeline
 
+## Active Workflow Location
+
+The active OpenRice Apify workflow now lives inside the `random-meal` repository:
+
+```text
+/Users/minseong/Desktop/github/random-meal
+```
+
+The old standalone workspace at `/Users/minseong/Desktop/github/openrice-apify-workspace` was only a proof-of-concept and is no longer part of the active workflow.
+
+Copy future manually downloaded Apify raw JSON files into:
+
+```text
+tools/openrice_apify/raw/
+```
+
+Run future commands from the repository root:
+
+```bash
+cd /Users/minseong/Desktop/github/random-meal
+
+python tools/openrice_apify/scripts/normalize_openrice.py
+
+python tools/openrice_apify/scripts/export_candidates.py \
+  --input tools/openrice_apify/processed/openrice_candidates.json \
+  --output tools/openrice_apify/processed/openrice_candidates.export.json
+
+python tools/openrice_apify/scripts/merge_candidates.py
+
+python tools/openrice_apify/scripts/merge_candidates.py --write
+```
+
+- `normalize_openrice.py` creates normalized candidates from local raw JSON.
+- `export_candidates.py` validates candidates for manual review.
+- `merge_candidates.py` performs a dry run by default.
+- `merge_candidates.py --write` appends non-duplicate hidden candidates to `assets/data/restaurants.json`.
+- Merged entries remain hidden with `publicDisplay: false`.
+- Manual review is required before making any merged entry public.
+
 ## Purpose
 
 This directory contains a separate, local-only pipeline for preparing OpenRice Apify discovery data as review candidates.

@@ -30,6 +30,12 @@ The working static MVP includes filters, decision tools, multilingual core UI, C
 - [Manual candidate review worksheet](tools/discovery/manual-review-worksheet.md)
 - [Codex repository instructions](docs/CODEX_INSTRUCTIONS.md)
 
+## Local OpenRice Data Pipeline
+
+The project includes a local-only OpenRice Apify candidate pipeline under [`tools/openrice_apify/`](tools/openrice_apify/README.md). It is not part of the frontend, is not run by Cloudflare Pages, and does not run for website visitors. Developers use it only to prepare and review restaurant candidates.
+
+Public site data continues to come from `assets/data/restaurants.json`. See the [OpenRice Apify pipeline guide](tools/openrice_apify/README.md) for usage.
+
 ## Development Philosophy
 
 The project stays static-first, beginner-editable, SEO-friendly, low-cost, and maintainable. Simple, working solutions take priority over fancy or premature features. The MVP uses no framework, build tool, backend, paid API, AI, Google Maps, login, or user accounts.
