@@ -112,3 +112,5 @@ Before public launch:
 - At minimum, no entry should remain `remove_candidate`
 - Any `needs_update` entry should be reviewed before submitting to AdSense
 - Every publicly displayed entry should be suitable for recommendation
+
+Hidden OpenRice Apify candidates should also be reviewed with the [OpenRice candidate review checklist](../tools/openrice_apify/review-checklist.md) before any manual change to `publicDisplay`.

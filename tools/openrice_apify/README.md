@@ -78,6 +78,7 @@ tools/openrice_apify/
     normalize_openrice.py
     export_candidates.py
     merge_candidates.py
+    list_hidden_candidates.py
 ```
 
 ## Input
@@ -158,6 +159,24 @@ python tools/openrice_apify/scripts/merge_candidates.py --write
 
 # 4. Manually review every appended entry before public display.
 ```
+
+## Review Hidden Candidates
+
+List OpenRice Apify entries that are hidden with `publicDisplay: false`:
+
+```bash
+python tools/openrice_apify/scripts/list_hidden_candidates.py
+```
+
+Print the same concise candidate summaries as JSON:
+
+```bash
+python tools/openrice_apify/scripts/list_hidden_candidates.py --format json
+```
+
+An alternative restaurant database path can be supplied with `--target`. The script is read-only and never modifies files. Candidates remain hidden until they are manually reviewed and edited.
+
+Use [review-checklist.md](review-checklist.md) before changing any candidate's `publicDisplay` value. Public display must only be enabled after a manual factual and content-safety review.
 
 ## Setup
 
