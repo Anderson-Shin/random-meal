@@ -66,6 +66,8 @@ Manually downloaded OpenRice Apify JSON
 
 `run_actor.py` is an optional local helper for an explicitly approved future Apify run. It is never called by the normalizer or exporter.
 
+Apify actor execution is currently paused/fallback. The active local acquisition path is [OpenRice Direct Discovery](../openrice_direct/README.md). The normalize, transform, merge, and review tools in this directory remain the shared downstream pipeline.
+
 The normalizer accepts input only from `raw/`, and normalization/export output paths are restricted to `processed/`. This prevents the tools from writing to the public restaurant database.
 
 ## Folder Structure
@@ -326,7 +328,7 @@ python tools/openrice_apify/scripts/run_actor.py \
   --output tools/openrice_apify/raw/openrice_download.json
 ```
 
-The actor helper requires explicit arguments and local credentials. Do not use it without confirming source terms and project approval.
+The actor helper is currently paused/fallback and requires explicit arguments and local credentials. Do not use it without confirming source terms and project approval.
 
 ## Future Integration
 

@@ -134,6 +134,13 @@ The roadmap is version-based. Update it whenever feature scope or completion cha
 - [ ] Collect roughly 40 to 50 hidden candidates per target area
 - [ ] Manually approve an initial reviewed subset per target area
 
+## v0.4.10 DistrictId Direct Discovery
+
+- [x] Add districtId-based OpenRice direct discovery tool
+- [x] Configure Central, Quarry Bay, and Kwun Tong
+- [x] Keep Apify actor execution as paused/fallback
+- [ ] Run direct discovery and inspect local raw candidate output
+
 ## v0.5.0 UX Improvements
 
 - [ ] Improve roulette animation

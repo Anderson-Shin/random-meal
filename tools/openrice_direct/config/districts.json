@@ -1,0 +1,20 @@
+{
+  "central": {
+    "label": "Central",
+    "districtId": 1003,
+    "district": "中環",
+    "outputSlug": "central"
+  },
+  "quarry_bay": {
+    "label": "Quarry Bay",
+    "districtId": 1014,
+    "district": "鰂魚涌",
+    "outputSlug": "quarry_bay"
+  },
+  "kwun_tong": {
+    "label": "Kwun Tong",
+    "districtId": 2026,
+    "district": "觀塘",
+    "outputSlug": "kwun_tong"
+  }
+}
