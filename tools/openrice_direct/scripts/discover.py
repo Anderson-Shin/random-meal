@@ -83,6 +83,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--delay-seconds", type=float, default=3)
     parser.add_argument("--timeout-seconds", type=float, default=20)
     parser.add_argument("--pages", type=int, default=3)
+    local_input = parser.add_mutually_exclusive_group()
+    local_input.add_argument("--html-file", type=Path)
+    local_input.add_argument("--html-dir", type=Path)
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args()
 
@@ -189,12 +192,35 @@ def fetch_html(url: str, timeout_seconds: float) -> str:
     with urlopen(request, timeout=timeout_seconds) as response:
         content_type = response.headers.get_content_charset() or "utf-8"
         html = response.read().decode(content_type, errors="replace")
+    validate_listing_html(html, "OpenRice response")
+    return html
+
+
+def validate_listing_html(html: str, source: str) -> None:
     if any(marker in html for marker in SECURITY_PAGE_MARKERS):
         raise ValueError(
-            "OpenRice returned a security-check page; discovery stopped without "
-            "attempting to bypass it"
+            f"{source} appears to be a security-check page, not a listing page; "
+            "discovery stopped without attempting to bypass it"
         )
-    return html
+
+
+def local_html_files(html_file: Path | None, html_dir: Path | None) -> list[Path]:
+    if html_file is not None:
+        if not html_file.is_file():
+            raise ValueError(f"local HTML file does not exist: {html_file}")
+        return [html_file]
+    if html_dir is None:
+        return []
+    if not html_dir.is_dir():
+        raise ValueError(f"local HTML directory does not exist: {html_dir}")
+    files = sorted(
+        path
+        for path in html_dir.iterdir()
+        if path.is_file() and path.suffix.casefold() in {".html", ".htm"}
+    )
+    if not files:
+        raise ValueError(f"no .html or .htm files found under: {html_dir}")
+    return files
 
 
 def discover_district(
@@ -247,6 +273,42 @@ def discover_district(
     return candidates, len(visited), skipped_duplicates, pagination_found
 
 
+def discover_local_html(
+    config: dict[str, Any],
+    files: list[Path],
+    max_items: int,
+) -> tuple[list[dict[str, Any]], int, int]:
+    district_id = int(config["districtId"])
+    page_url = build_listing_url(district_id)
+    candidates: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    skipped_duplicates = 0
+    fetched_at = datetime.now().astimezone().isoformat(timespec="seconds")
+    files_read = 0
+
+    for path in files:
+        html = path.read_text(encoding="utf-8", errors="replace")
+        validate_listing_html(html, f"saved HTML file {path}")
+        files_read += 1
+        page_candidates, _ = parse_listing(
+            html,
+            page_url,
+            str(config["district"]),
+            district_id,
+            fetched_at,
+        )
+        for candidate in page_candidates:
+            key = str(candidate["restaurant_id"] or candidate["source_url"])
+            if key in seen:
+                skipped_duplicates += 1
+                continue
+            seen.add(key)
+            candidates.append(candidate)
+            if len(candidates) >= max_items:
+                return candidates, files_read, skipped_duplicates
+    return candidates, files_read, skipped_duplicates
+
+
 def output_path(output_dir: Path, output_slug: str) -> Path:
     date = datetime.now().astimezone().date().isoformat()
     return output_dir / f"openrice_direct_{output_slug}_{date}.json"
@@ -261,6 +323,10 @@ def validate_args(args: argparse.Namespace) -> None:
         raise ValueError("--delay-seconds must not be negative")
     if args.timeout_seconds <= 0:
         raise ValueError("--timeout-seconds must be greater than zero")
+    if (args.html_file is not None or args.html_dir is not None) and args.district == "all":
+        raise ValueError(
+            "local HTML mode requires one district key; run each district separately"
+        )
 
 
 def main() -> int:
@@ -279,16 +345,28 @@ def main() -> int:
             )
 
         for key, config in selected:
-            candidates, pages_fetched, skipped, pagination_found = discover_district(
-                config,
-                args.max_items,
-                args.pages,
-                args.delay_seconds,
-                args.timeout_seconds,
-            )
+            files = local_html_files(args.html_file, args.html_dir)
+            if files:
+                candidates, pages_fetched, skipped = discover_local_html(
+                    config,
+                    files,
+                    args.max_items,
+                )
+                pagination_found = True
+            else:
+                candidates, pages_fetched, skipped, pagination_found = discover_district(
+                    config,
+                    args.max_items,
+                    args.pages,
+                    args.delay_seconds,
+                    args.timeout_seconds,
+                )
             if not candidates:
                 raise ValueError(
-                    f"no candidates found for {key}; no output file was written"
+                    f"no candidates found for {key}; no output file was written. "
+                    "Confirm the saved HTML is a rendered/listing page source and "
+                    "contains restaurant links with IDs, or try saving a different "
+                    "page view."
                 )
             path = output_path(args.output_dir, str(config["outputSlug"]))
             if not args.dry_run:
@@ -304,6 +382,7 @@ def main() -> int:
             print(f"Candidates extracted: {len(candidates)}")
             print(f"Output path: {path if not args.dry_run else 'dry-run; not written'}")
             print(f"Skipped duplicates: {skipped}")
+            print(f"Input mode: {'local HTML' if files else 'URL fetch'}")
             if not pagination_found:
                 print("Pagination was not expanded because no reliable listing links were found.")
     except (HTTPError, URLError, TimeoutError, OSError, ValueError) as error:

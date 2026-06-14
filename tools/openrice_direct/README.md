@@ -62,6 +62,61 @@ openrice_direct_central_YYYY-MM-DD.json
 
 Do not commit generated raw JSON.
 
+## Local HTML Input Mode
+
+Use local HTML mode when URL fetch mode receives an OpenRice security-check page:
+
+1. Open the OpenRice district listing page in Atlas or another browser.
+2. Confirm the real restaurant listing page is visible.
+3. View or save the page source.
+4. Save the files locally, for example:
+
+```text
+tools/openrice_direct/html/central/page1.html
+tools/openrice_direct/html/quarry_bay/page1.html
+tools/openrice_direct/html/kwun_tong/page1.html
+```
+
+5. Parse one district at a time:
+
+```bash
+python tools/openrice_direct/scripts/discover.py \
+  --district central \
+  --html-dir tools/openrice_direct/html/central \
+  --max-items 50
+```
+
+Parse one saved file:
+
+```bash
+python tools/openrice_direct/scripts/discover.py \
+  --district central \
+  --html-file tools/openrice_direct/html/central/page1.html \
+  --max-items 50
+```
+
+Run all three local district folders separately:
+
+```bash
+python tools/openrice_direct/scripts/discover.py --district central --html-dir tools/openrice_direct/html/central --max-items 50
+python tools/openrice_direct/scripts/discover.py --district quarry_bay --html-dir tools/openrice_direct/html/quarry_bay --max-items 50
+python tools/openrice_direct/scripts/discover.py --district kwun_tong --html-dir tools/openrice_direct/html/kwun_tong --max-items 50
+```
+
+Local HTML mode makes no network requests. Saved HTML under `tools/openrice_direct/html/` is ignored by git and must not be committed. This mode only writes local raw candidate JSON and does not update `restaurants.json` directly.
+
+Inspect generated raw JSON, then continue with the downstream workflow:
+
+```bash
+python tools/openrice_apify/scripts/normalize_openrice.py
+python tools/openrice_apify/scripts/transform_candidates.py
+python tools/openrice_apify/scripts/merge_candidates.py \
+  --input tools/openrice_apify/processed/openrice_transformed_candidates.json \
+  --refresh-existing
+```
+
+The merge command is a dry run unless `--write` is explicitly provided. Inspect the dry-run summary before any write.
+
 ## Output
 
 The parser intentionally keeps minimal factual candidate hints:
